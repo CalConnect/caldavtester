@@ -496,6 +496,10 @@
 				<key>$principaluri%d:</key>
 				<value>$principals_uids:$userguid%d:/</value>
 			</substitution>
+      <substitution>
+        <key>$sharingorganizeruri%d:</key>
+        <value>$principals_uids:$userguid%d:/</value>
+      </substitution>
 			<substitution>
 				<key>$principal%dnoslash:</key>
 				<value>$principals_users:$userid%d:</value>
