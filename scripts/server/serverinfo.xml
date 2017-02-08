@@ -130,6 +130,11 @@
 	</features>
 
 	<substitutions>
+    <!-- Some old clients used infinite instead of infinity -->
+    <substitution>
+      <key>$infinite-depth-value:</key>
+      <value>infinite</value>
+    </substitution>
 		<!-- Useful xpath shortcuts for verifiers -->
 		<substitution>
 			<key>$multistatus-response-prefix:</key>
