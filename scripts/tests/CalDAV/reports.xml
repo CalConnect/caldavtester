@@ -24,6 +24,31 @@
 	</require-feature>
 
 	<start>
+    <request user="$userid1:" pswd="$pswd1:">
+      <method>DELETEALL</method>
+      <ruri>$calendarpath1:/</ruri>
+    </request>
+    <request user="$userid1:" pswd="$pswd1:">
+      <method>DELETEALL</method>
+      <ruri>$notificationpath1:/</ruri>
+    </request>
+    <request user="$userid2:" pswd="$pswd1:">
+      <method>DELETEALL</method>
+      <ruri>$calendarpath2:/</ruri>
+    </request>
+    <request user="$userid2:" pswd="$pswd1:">
+      <method>DELETEALL</method>
+      <ruri>$notificationpath2:/</ruri>
+    </request>
+    <request user="$userid3:" pswd="$pswd1:">
+      <method>DELETEALL</method>
+      <ruri>$calendarpath3:/</ruri>
+    </request>
+    <request user="$userid3:" pswd="$pswd1:">
+      <method>DELETEALL</method>
+      <ruri>$notificationpath3:/</ruri>
+    </request>
+    
 		<request end-delete="yes">
 			<method>PUT</method>
 			<ruri>$calendarpath1:/1.ics</ruri>
@@ -1133,6 +1158,26 @@
 					<callback>multistatusItems</callback>
 					<arg>
 						<name>okhrefs</name>
+            <value>1.ics</value>
+            <value>2.ics</value>
+            <value>3.ics</value>
+            <value>4.ics</value>
+            <value>5.ics</value>
+            <value>6.ics</value>
+            <value>7.ics</value>
+            <value>8.ics</value>
+            <value>9.ics</value>
+            <value>10.ics</value>
+            <value>11.ics</value>
+            <value>12.ics</value>
+            <value>13.ics</value>
+            <value>14.ics</value>
+            <value>18.ics</value>
+            <value>19.ics</value>
+            <value>20.ics</value>
+            <value>21.ics</value>
+            <value>22.ics</value>
+            <value>27.ics</value>
 					</arg>
 				</verify>
 			</request>
@@ -1153,6 +1198,12 @@
 					<callback>multistatusItems</callback>
 					<arg>
 						<name>okhrefs</name>
+            <value>101.ics</value>
+            <value>102.ics</value>
+            <value>103.ics</value>
+            <value>104.ics</value>
+            <value>105.ics</value>
+            <value>106.ics</value>
 					</arg>
 				</verify>
 			</request>
@@ -1817,6 +1868,17 @@
 					<callback>multistatusItems</callback>
 					<arg>
 						<name>okhrefs</name>
+            <value>1.ics</value>
+            <value>2.ics</value>
+            <value>3.ics</value>
+            <value>4.ics</value>
+            <value>8.ics</value>
+            <value>9.ics</value>
+            <value>10.ics</value>
+            <value>11.ics</value>
+            <value>12.ics</value>
+            <value>13.ics</value>
+            <value>14.ics</value>
 					</arg>
 				</verify>
 			</request>
@@ -2225,6 +2287,10 @@
 					<callback>multistatusItems</callback>
 					<arg>
 						<name>okhrefs</name>
+            <value>5.ics</value>
+            <value>6.ics</value>
+            <value>7.ics</value>
+            <value>19.ics</value>
 					</arg>
 				</verify>
 			</request>
@@ -2245,6 +2311,9 @@
 					<callback>multistatusItems</callback>
 					<arg>
 						<name>okhrefs</name>
+            <value>101.ics</value>
+            <value>102.ics</value>
+            <value>103.ics</value>
 					</arg>
 				</verify>
 			</request>
@@ -2329,6 +2398,23 @@
 					<callback>multistatusItems</callback>
 					<arg>
 						<name>okhrefs</name>
+            <value>5.ics</value>
+            <value>6.ics</value>
+            <value>7.ics</value>
+            <value>8.ics</value>
+            <value>9.ics</value>
+            <value>10.ics</value>
+            <value>11.ics</value>
+            <value>12.ics</value>
+            <value>13.ics</value>
+            <value>14.ics</value>
+            <value>18.ics</value>
+            <value>19.ics</value>
+            <value>20.ics</value>
+            <value>21.ics</value>
+            <value>22.ics</value>
+            <value>23.ics</value>
+            <value>27.ics</value>
 					</arg>
 				</verify>
 			</request>
@@ -2349,6 +2435,10 @@
 					<callback>multistatusItems</callback>
 					<arg>
 						<name>okhrefs</name>
+            <value>101.ics</value>
+            <value>104.ics</value>
+            <value>105.ics</value>
+            <value>106.ics</value>
 					</arg>
 				</verify>
 			</request>
@@ -2461,6 +2551,23 @@
 					<callback>multistatusItems</callback>
 					<arg>
 						<name>okhrefs</name>
+            <value>5.ics</value>
+            <value>6.ics</value>
+            <value>7.ics</value>
+            <value>8.ics</value>
+            <value>9.ics</value>
+            <value>10.ics</value>
+            <value>11.ics</value>
+            <value>12.ics</value>
+            <value>13.ics</value>
+            <value>14.ics</value>
+            <value>18.ics</value>
+            <value>19.ics</value>
+            <value>20.ics</value>
+            <value>21.ics</value>
+            <value>22.ics</value>
+            <value>23.ics</value>
+            <value>27.ics</value>
 					</arg>
 				</verify>
 			</request>
@@ -2481,6 +2588,12 @@
 					<callback>multistatusItems</callback>
 					<arg>
 						<name>okhrefs</name>
+            <value>101.ics</value>
+            <value>102.ics</value>
+            <value>103.ics</value>
+            <value>104.ics</value>
+            <value>105.ics</value>
+            <value>106.ics</value>
 					</arg>
 				</verify>
 			</request>
@@ -3308,7 +3421,44 @@
 			</request>
 		</test>
 	</test-suite>
-	
-	<end/>
+
+  <end>
+    <request user="$userid1:" pswd="$pswd1:">
+      <method>DELETEALL</method>
+      <ruri>$calendarpath1:/</ruri>
+    </request>
+    <request user="$userid1:" pswd="$pswd1:">
+      <method>DELETEALL</method>
+      <ruri>$taskspath1:/</ruri>
+    </request>
+    <request user="$userid1:" pswd="$pswd1:">
+      <method>DELETEALL</method>
+      <ruri>$notificationpath1:/</ruri>
+    </request>
+    <request user="$userid2:" pswd="$pswd1:">
+      <method>DELETEALL</method>
+      <ruri>$calendarpath2:/</ruri>
+    </request>
+    <request user="$userid2:" pswd="$pswd1:">
+      <method>DELETEALL</method>
+      <ruri>$taskspath1:/</ruri>
+    </request>
+    <request user="$userid2:" pswd="$pswd1:">
+      <method>DELETEALL</method>
+      <ruri>$notificationpath2:/</ruri>
+    </request>
+    <request user="$userid3:" pswd="$pswd1:">
+      <method>DELETEALL</method>
+      <ruri>$calendarpath3:/</ruri>
+    </request>
+    <request user="$userid3:" pswd="$pswd1:">
+      <method>DELETEALL</method>
+      <ruri>$taskspath1:/</ruri>
+    </request>
+    <request user="$userid3:" pswd="$pswd1:">
+      <method>DELETEALL</method>
+      <ruri>$notificationpath3:/</ruri>
+    </request>
+  </end>
 	
 </caldavtest>
