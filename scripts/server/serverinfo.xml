@@ -30,6 +30,9 @@
 	<waitsuccess>30</waitsuccess>
 
 	<features>
+    <!--  Standard CalDAV features that may not be supported -->
+    <feature>CalDAV text-match</feature>							<!-- Text match in calendar query -->
+
 		<!--  Generic WebDAV extensions -->
 		<feature>COPY Method</feature>							<!-- COPY method -->
 		<feature>MOVE Method</feature>							<!-- MOVE method -->

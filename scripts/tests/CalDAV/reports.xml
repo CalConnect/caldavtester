@@ -717,6 +717,9 @@
 			</request>
 		</test>
 		<test name='3'>
+      <require-feature>
+        <feature>CalDAV text-match</feature>
+      </require-feature>
 			<description>query for resources where the SUMMARY in a VEVENT contains the character '1'</description>
 			<request>
 				<method>REPORT</method>
@@ -743,6 +746,9 @@
 			</request>
 		</test>
 		<test name='4'>
+      <require-feature>
+        <feature>CalDAV text-match</feature>
+      </require-feature>
 			<description>query for resources where the SUMMARY in a VEVENT does not contain the character '1'</description>
 			<request>
 				<method>REPORT</method>
@@ -775,6 +781,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$calendarpath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/basicquery/3.txt</filepath>
@@ -827,6 +837,9 @@
 			</request>
 		</test>
 		<test name='7'>
+      <require-feature>
+        <feature>CalDAV text-match</feature>
+      </require-feature>
 			<description>query for resources that have a DTSTART in a VEVENT that contains a TZID parameter containing the text 'Paci'</description>
 			<request>
 				<method>REPORT</method>
@@ -845,6 +858,9 @@
 			</request>
 		</test>
 		<test name='8'>
+      <require-feature>
+        <feature>CalDAV text-match</feature>
+      </require-feature>
 			<description>query for resources that have a DTSTART in a VEVENT that contains a TZID parameter not containing the text 'Paci'</description>
 			<request>
 				<method>REPORT</method>
@@ -879,6 +895,9 @@
 			</request>
 		</test>
 		<test name='9'>
+      <require-feature>
+        <feature>CalDAV text-match</feature>
+      </require-feature>
 			<description>query for resources that have a DTSTART in a VEVENT that contains a TZID parameter containing the text 'Paci' and 'Moun'</description>
 			<request>
 				<method>REPORT</method>
@@ -918,6 +937,9 @@
 			</request>
 		</test>
 		<test name='11'>
+      <require-feature>
+        <feature>CalDAV text-match</feature>
+      </require-feature>
 			<description>query for resources where the SUMMARY in a VEVENT contains the character '4' and has a DTSTART in a VEVENT that contains a TZID parameter containing the text 'East'</description>
 			<request>
 				<method>REPORT</method>
@@ -1055,6 +1077,9 @@
 			</request>
 		</test>
 		<test name='15'>
+      <require-feature>
+        <feature>CalDAV text-match</feature>
+      </require-feature>
 			<description>query for resources where the SUMMARY in a VTODO contains the character '1'</description>
 			<request>
 				<method>REPORT</method>
@@ -1073,6 +1098,9 @@
 			</request>
 		</test>
 		<test name='16'>
+      <require-feature>
+        <feature>CalDAV text-match</feature>
+      </require-feature>
 			<description>query for resources that have a DUE in a VTODO that contains a TZID parameter containing the text 'East'</description>
 			<request>
 				<method>REPORT</method>
@@ -1849,6 +1877,9 @@
 			</request>
 		</test>
 		<test name='4'>
+      <require-feature>
+        <feature>CalDAV text-match</feature>
+      </require-feature>
 			<description>query for VEVENTs within time range with specific SUMMARY text</description>
 			<request>
 				<method>REPORT</method>
@@ -1885,6 +1916,9 @@
 			</request>
 		</test>
 		<test name='6'>
+      <require-feature>
+        <feature>CalDAV text-match</feature>
+      </require-feature>
 			<description>query for overridden VEVENT instance within time range</description>
 			<request>
 				<method>REPORT</method>
@@ -1955,6 +1989,9 @@
 			</request>
 		</test>
 		<test name='10'>
+      <require-feature>
+        <feature>CalDAV text-match</feature>
+      </require-feature>
 			<description>query for VTODOs within time range with specific SUMMARY text</description>
 			<request>
 				<method>REPORT</method>
@@ -3142,6 +3179,9 @@
 			</request>
 		</test>
 		<test name='11'>
+      <require-feature>
+        <feature>CalDAV text-match</feature>
+      </require-feature>
 			<description>time-range query with expand for one event - DURATION test</description>
 			<request>
 				<method>REPORT</method>
