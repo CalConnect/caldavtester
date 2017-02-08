@@ -442,6 +442,9 @@
 			</request>
 		</test>
 		<test name='3'>
+      <require-feature>
+        <feature>conditional-directory listing</feature>
+      </require-feature>
 			<description>GET on calendar home, changed headers</description>
 			<request>
 				<method>GET</method>
@@ -468,6 +471,9 @@
 			</request>
 		</test>
 		<test name='4'>
+      <require-feature>
+        <feature>conditional-directory listing</feature>
+      </require-feature>
 			<description>Conditional GET on calendar home</description>
 			<request>
 				<method>GET</method>
