@@ -67,7 +67,7 @@
 		<feature>quota</feature>						<!-- WebDAV QUOTA -->
 		<!-- <feature>quota-on-resources</feature> -->	<!-- WebDAV QUOTA on calendar and address book object resources -->
 		<feature>resource-id</feature>					<!-- WebDAV BIND DAV:resource-id property -->
-		<!-- <feature>server-info</feature> -->			<!-- WebDAV server-info document -->
+		<!-- <feature>server-info</feature>			<!-- WebDAV server-info document -->
 		<feature>sync-report</feature>					<!-- WebDAV collection sync REPORT -->
 		<!-- <feature>sync-report-limit</feature> -->	<!-- WebDAV collection sync REPORT DAV:limit support -->
 		<feature>sync-report-home</feature>				<!-- WebDAV collection sync REPORT on Homes -->
@@ -110,6 +110,7 @@
 		<feature>query-extended</feature>				<!-- calendar-query-extended extension -->
 		<feature>shared-calendars</feature>				<!-- Shared calendars extension -->
 		<feature>share-calendars-to-groups</feature>	<!-- Share calendars to groups extension -->
+    <feature>external-sharees-disallowed</feature>  <!-- Don't allow sharees that are not in system -->
 		<feature>schedule-changes</feature>				<!-- schedule-changes property extension -->
 		<feature>split-calendars</feature>				<!-- Calendars are split by component type -->
 		<feature>supported-component-sets</feature>		<!-- CALDAV:supported-calendar-component-sets on calendar homes -->
