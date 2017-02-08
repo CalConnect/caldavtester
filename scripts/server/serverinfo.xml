@@ -32,6 +32,7 @@
 	<features>
     <!--  Standard CalDAV features that may not be supported -->
     <feature>CalDAV text-match</feature>							<!-- Text match in calendar query -->
+    <feature>this-and-future</feature>                <!-- is supported  -->
 
 		<!--  Generic WebDAV extensions -->
 		<feature>COPY Method</feature>							<!-- COPY method -->

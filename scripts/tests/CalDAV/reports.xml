@@ -1022,6 +1022,9 @@
 			</request>
 		</test>
 		<test name='13'>
+      <require-feature>
+        <feature>this-and-future</feature>
+      </require-feature>
 			<description>query for resources where the RECURRENCE-ID in a VEVENT does not contain a RANGE parameter</description>
 			<request>
 				<method>REPORT</method>
@@ -2013,6 +2016,9 @@
 			</request>
 		</test>
 		<test name='8'>
+      <require-feature>
+        <feature>this-and-future</feature>
+      </require-feature>
 			<description>query for overridden this-and-future VEVENT within time range</description>
 			<request>
 				<method>REPORT</method>
@@ -2979,6 +2985,9 @@
 			</request>
 		</test>
 		<test name='2'>
+      <require-feature>
+        <feature>this-and-future</feature><!-- because such an event (7.ics) falls in period -->
+      </require-feature>
 			<description>query for free busy with overlapping and consecutive events</description>
 			<request>
 				<method>REPORT</method>
