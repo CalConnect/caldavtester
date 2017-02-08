@@ -627,6 +627,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$calendarpath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/basicquery/1.txt</filepath>
@@ -667,6 +671,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$taskspath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/basicquery/1.txt</filepath>
@@ -684,6 +692,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$calendarpath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/basicquery/8.txt</filepath>
@@ -723,6 +735,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$taskspath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/basicquery/8.txt</filepath>
@@ -749,6 +765,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$calendarpath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/basicquery/2.txt</filepath>
@@ -778,6 +798,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$calendarpath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/basicquery/7.txt</filepath>
@@ -830,6 +854,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$calendarpath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/basicquery/9.txt</filepath>
@@ -869,6 +897,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$calendarpath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/basicquery/4.txt</filepath>
@@ -890,6 +922,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$calendarpath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/basicquery/10.txt</filepath>
@@ -927,6 +963,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$calendarpath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/basicquery/5.txt</filepath>
@@ -947,6 +987,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$calendarpath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/basicquery/16.xml</filepath>
@@ -969,6 +1013,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$calendarpath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/basicquery/6.txt</filepath>
@@ -991,6 +1039,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$calendarpath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/basicquery/17.xml</filepath>
@@ -1029,6 +1081,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$calendarpath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/basicquery/11.txt</filepath>
@@ -1048,6 +1104,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$calendarpath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/basicquery/101.txt</filepath>
@@ -1086,6 +1146,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$taskspath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/basicquery/101.txt</filepath>
@@ -1112,6 +1176,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$taskspath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/basicquery/102.txt</filepath>
@@ -1133,6 +1201,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$taskspath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/basicquery/103.txt</filepath>
@@ -1153,6 +1225,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$calendarpath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/basicquery/201.txt</filepath>
@@ -1193,6 +1269,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$taskspath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/basicquery/201.txt</filepath>
@@ -1219,6 +1299,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$calendarpath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/basicquery/204.xml</filepath>
@@ -1297,6 +1381,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$taskspath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/basicquery/204.xml</filepath>
@@ -1320,6 +1408,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$calendarpath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/basicquery/202.txt</filepath>
@@ -1340,6 +1432,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$taskspath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/basicquery/202.txt</filepath>
@@ -1360,6 +1456,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$calendarpath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/basicquery/205.xml</filepath>
@@ -1412,6 +1512,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$taskspath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/basicquery/205.xml</filepath>
@@ -1430,6 +1534,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$taskspath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/basicquery/203.txt</filepath>
@@ -1450,6 +1558,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$calendarpath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/basicquery/206.xml</filepath>
@@ -1488,6 +1600,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$taskspath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/basicquery/206.xml</filepath>
@@ -1508,6 +1624,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$calendarpath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/basicquery/12.txt</filepath>
@@ -1542,6 +1662,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$calendarpath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/basicquery/13.txt</filepath>
@@ -1564,6 +1688,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$calendarpath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/basicquery/14.txt</filepath>
@@ -1586,6 +1714,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$calendarpath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/basicquery/15.xml</filepath>
@@ -1603,6 +1735,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$calendarpath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/basicquery/18.xml</filepath>
@@ -1624,6 +1760,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$calendarpath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/basicquery/19.xml</filepath>
@@ -1645,6 +1785,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$calendarpath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/basicquery/20.xml</filepath>
@@ -1666,6 +1810,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$calendarpath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/basicquery/21.xml</filepath>
@@ -1693,6 +1841,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$calendarpath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/basicquery/22.xml</filepath>
@@ -1722,6 +1874,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$calendarpath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/basicquery/23.xml</filepath>
@@ -1745,6 +1901,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$calendarpath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/basicquery/24.xml</filepath>
@@ -1766,6 +1926,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$calendarpath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/basicquery/25.xml</filepath>
@@ -1789,6 +1953,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$calendarpath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/filtereddata/1.xml</filepath>
@@ -1814,6 +1982,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$calendarpath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/filtereddata/2.xml</filepath>
@@ -1842,6 +2014,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$calendarpath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/timerangequery/1.txt</filepath>
@@ -1863,6 +2039,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$calendarpath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/timerangequery/2.txt</filepath>
@@ -1894,6 +2074,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$calendarpath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/timerangequery/14.xml</filepath>
@@ -1949,6 +2133,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$calendarpath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/timerangequery/3.txt</filepath>
@@ -1967,6 +2155,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$calendarpath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/timerangequery/4.txt</filepath>
@@ -1988,6 +2180,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$calendarpath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/timerangequery/5.txt</filepath>
@@ -2006,6 +2202,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$calendarpath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/timerangequery/6.txt</filepath>
@@ -2023,6 +2223,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$calendarpath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/timerangequery/7.txt</filepath>
@@ -2041,6 +2245,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$taskspath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/timerangequery/101.txt</filepath>
@@ -2064,6 +2272,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$taskspath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/timerangequery/102.txt</filepath>
@@ -2082,6 +2294,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$taskspath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/timerangequery/103.txt</filepath>
@@ -2102,6 +2318,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$calendarpath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/timerangequery/104.xml</filepath>
@@ -2123,6 +2343,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$calendarpath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/timerangequery/105.xml</filepath>
@@ -2141,6 +2365,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$calendarpath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/timerangequery/8.txt</filepath>
@@ -2162,6 +2390,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$calendarpath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/timerangequery/9.xml</filepath>
@@ -2195,6 +2427,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$calendarpath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/timerangequery/10.xml</filepath>
@@ -2220,6 +2456,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$calendarpath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/timerangequery/11.xml</filepath>
@@ -2238,6 +2478,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$calendarpath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/timerangequery/12.xml</filepath>
@@ -2267,6 +2511,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$calendarpath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/timerangequery/13.xml</filepath>
@@ -2285,6 +2533,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$calendarpath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/timerangequery/201.xml</filepath>
@@ -2309,6 +2561,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$taskspath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/timerangequery/201.xml</filepath>
@@ -2332,6 +2588,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$calendarpath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/timerangequery/204.xml</filepath>
@@ -2376,6 +2636,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$taskspath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/timerangequery/204.xml</filepath>
@@ -2396,6 +2660,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$calendarpath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/timerangequery/202.xml</filepath>
@@ -2433,6 +2701,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$taskspath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/timerangequery/202.xml</filepath>
@@ -2457,6 +2729,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$calendarpath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/timerangequery/205.xml</filepath>
@@ -2528,6 +2804,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$taskspath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/timerangequery/205.xml</filepath>
@@ -2549,6 +2829,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$calendarpath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/timerangequery/203.xml</filepath>
@@ -2586,6 +2870,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$taskspath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/timerangequery/203.xml</filepath>
@@ -2612,6 +2900,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$calendarpath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/timerangequery/206.xml</filepath>
@@ -2685,6 +2977,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$taskspath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/timerangequery/206.xml</filepath>
@@ -2711,6 +3007,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$calendarpath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/timerangequery/15.xml</filepath>
@@ -2732,6 +3032,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$calendarpath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/timerangequery/16.xml</filepath>
@@ -2753,6 +3057,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$calendarpath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/timerangequery/17.xml</filepath>
@@ -2774,6 +3082,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$calendarpath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/timerangequery/18.xml</filepath>
@@ -2795,6 +3107,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$calendarpath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/timerangequery/19.xml</filepath>
@@ -2816,6 +3132,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$calendarpath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/timerangequery/20.xml</filepath>
@@ -2837,6 +3157,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$calendarpath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/timerangequery/18.xml</filepath>
@@ -2858,6 +3182,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$calendarpath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/alarmtimerangequery/1.txt</filepath>
@@ -2876,6 +3204,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$calendarpath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/alarmtimerangequery/2.txt</filepath>
@@ -2894,6 +3226,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$calendarpath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/alarmtimerangequery/3.txt</filepath>
@@ -2913,6 +3249,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$calendarpath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/alarmtimerangequery/4.txt</filepath>
@@ -2932,6 +3272,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$taskspath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/alarmtimerangequery/5.txt</filepath>
@@ -2953,6 +3297,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$calendarpath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/freebusy/1.txt</filepath>
@@ -2992,6 +3340,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$calendarpath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/freebusy/2.txt</filepath>
@@ -3044,6 +3396,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$calendarpath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/limitexpand/1.txt</filepath>
@@ -3064,6 +3420,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$calendarpath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/limitexpand/2.txt</filepath>
@@ -3084,6 +3444,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$calendarpath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/limitexpand/3.txt</filepath>
@@ -3105,6 +3469,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$calendarpath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/limitexpand/4.txt</filepath>
@@ -3126,6 +3494,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$calendarpath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/limitexpand/5.txt</filepath>
@@ -3156,6 +3528,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$calendarpath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/limitexpand/6.xml</filepath>
@@ -3170,6 +3546,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$calendarpath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/limitexpand/12.xml</filepath>
@@ -3196,6 +3576,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$calendarpath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/limitexpand/13.xml</filepath>
@@ -3222,6 +3606,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$calendarpath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/limitexpand/7.xml</filepath>
@@ -3251,6 +3639,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$calendarpath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/limitexpand/14.xml</filepath>
@@ -3277,6 +3669,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$calendarpath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/limitexpand/10.xml</filepath>
@@ -3308,6 +3704,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$calendarpath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/limitexpand/8.xml</filepath>
@@ -3365,6 +3765,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$calendarpath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/limitexpand/9.xml</filepath>
@@ -3412,6 +3816,10 @@
 			<request>
 				<method>REPORT</method>
 				<ruri>$calendarpath1:/</ruri>
+        <header>
+          <name>Depth</name>
+          <value>1</value>
+        </header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/limitexpand/11.xml</filepath>
