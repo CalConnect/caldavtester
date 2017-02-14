@@ -30,6 +30,10 @@
 	<waitsuccess>30</waitsuccess>
 
 	<features>
+    <!--  Standard CalDAV features that may not be supported -->
+    <feature>CalDAV text-match</feature>							<!-- Text match in calendar query -->
+    <feature>this-and-future</feature>                <!-- is supported  -->
+
 		<!--  Generic WebDAV extensions -->
 		<feature>COPY Method</feature>							<!-- COPY method -->
 		<feature>MOVE Method</feature>							<!-- MOVE method -->
@@ -50,6 +54,7 @@
 		<feature>ctag</feature>							<!-- ctag extension -->
 		<feature>current-user-principal</feature>		<!-- current-user-principal extension -->
 		<feature>directory listing</feature> 			<!-- GET on collection -->
+    <feature>conditional-directory listing</feature> 			Conditional GET on collection
 		<feature>extended-principal-search</feature>	<!-- Extended principal-property-search REPORT extension -->
 		<feature>expand-property</feature>				<!-- Expand property REPORT -->
 		<feature>only-proxy-groups</feature>			<!-- Group-membership only includes delegated-to groups -->
@@ -62,7 +67,7 @@
 		<feature>quota</feature>						<!-- WebDAV QUOTA -->
 		<!-- <feature>quota-on-resources</feature> -->	<!-- WebDAV QUOTA on calendar and address book object resources -->
 		<feature>resource-id</feature>					<!-- WebDAV BIND DAV:resource-id property -->
-		<!-- <feature>server-info</feature> -->			<!-- WebDAV server-info document -->
+		<!-- <feature>server-info</feature>			<!-- WebDAV server-info document -->
 		<feature>sync-report</feature>					<!-- WebDAV collection sync REPORT -->
 		<!-- <feature>sync-report-limit</feature> -->	<!-- WebDAV collection sync REPORT DAV:limit support -->
 		<feature>sync-report-home</feature>				<!-- WebDAV collection sync REPORT on Homes -->
@@ -105,6 +110,7 @@
 		<feature>query-extended</feature>				<!-- calendar-query-extended extension -->
 		<feature>shared-calendars</feature>				<!-- Shared calendars extension -->
 		<feature>share-calendars-to-groups</feature>	<!-- Share calendars to groups extension -->
+    <feature>external-sharees-disallowed</feature>  <!-- Don't allow sharees that are not in system -->
 		<feature>schedule-changes</feature>				<!-- schedule-changes property extension -->
 		<feature>split-calendars</feature>				<!-- Calendars are split by component type -->
 		<feature>supported-component-sets</feature>		<!-- CALDAV:supported-calendar-component-sets on calendar homes -->
@@ -130,6 +136,11 @@
 	</features>
 
 	<substitutions>
+    <!-- Some old clients used infinite instead of infinity -->
+    <substitution>
+      <key>$infinite-depth-value:</key>
+      <value>infinite</value>
+    </substitution>
 		<!-- Useful xpath shortcuts for verifiers -->
 		<substitution>
 			<key>$multistatus-response-prefix:</key>
@@ -485,6 +496,10 @@
 				<key>$principaluri%d:</key>
 				<value>$principals_uids:$userguid%d:/</value>
 			</substitution>
+      <substitution>
+        <key>$sharingorganizeruri%d:</key>
+        <value>$principals_uids:$userguid%d:/</value>
+      </substitution>
 			<substitution>
 				<key>$principal%dnoslash:</key>
 				<value>$principals_users:$userid%d:</value>

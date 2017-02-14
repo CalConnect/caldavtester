@@ -12,7 +12,7 @@
       <href xmlns='DAV:'>$calendarhome1:/shared3</href>
     </hosturl>
     <organizer>
-      <href xmlns='DAV:'>$principaluri1:</href>
+      <href xmlns='DAV:'>$sharingorganizeruri1:</href>
       <common-name>User 01</common-name>
     </organizer>
     <summary>My Shared Calendar #3</summary>

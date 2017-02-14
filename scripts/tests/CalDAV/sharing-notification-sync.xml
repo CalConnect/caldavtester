@@ -36,6 +36,10 @@
 			<method>DELETEALL</method>
 			<ruri>$notificationpath2:/</ruri>
 		</request>
+    <request user="$userid2:" pswd="$pswd2:">
+      <method>DELETEALL</method>
+      <ruri>$calendarpath2:/</ruri>
+    </request>
 		<request end-delete="yes">
 			<method>MKCALENDAR</method>
 			<ruri>$calendarhome1:/shared/</ruri>
@@ -241,6 +245,9 @@
 					<filepath>Resource/CalDAV/sharing/notification-sync/2.xml</filepath>
 				</data>
 				<verify>
+          <require-feature>
+            <feature>dropbox</feature>
+          </require-feature>
 					<callback>multistatusItems</callback>
 					<arg>
 						<name>ignoremissing</name>
@@ -255,6 +262,20 @@
 						<value>$dropbox:/</value>
 					</arg>
 				</verify>
+        <verify>
+          <exclude-feature>
+            <feature>dropbox</feature>
+          </exclude-feature>
+          <callback>multistatusItems</callback>
+          <arg>
+            <name>ignoremissing</name>
+          </arg>
+          <arg>
+            <name>okhrefs</name>
+            <value>$notification:/</value>
+            <value>shared/</value>
+          </arg>
+        </verify>
 				<grabelement>
 					<name>/{DAV:}multistatus/{DAV:}sync-token</name>
 					<variable>$synctoken1:</variable>
@@ -278,6 +299,9 @@
 					<filepath>Resource/CalDAV/sharing/notification-sync/2.xml</filepath>
 				</data>
 				<verify>
+          <require-feature>
+            <feature>dropbox</feature>
+          </require-feature>
 					<callback>multistatusItems</callback>
 					<arg>
 						<name>ignoremissing</name>
@@ -291,6 +315,19 @@
 						<value>$dropbox:/</value>
 					</arg>
 				</verify>
+        <verify>
+          <exclude-feature>
+            <feature>dropbox</feature>
+          </exclude-feature>
+          <callback>multistatusItems</callback>
+          <arg>
+            <name>ignoremissing</name>
+          </arg>
+          <arg>
+            <name>okhrefs</name>
+            <value>$notification:/</value>
+          </arg>
+        </verify>
 				<grabelement>
 					<name>/{DAV:}multistatus/{DAV:}sync-token</name>
 					<variable>$synctoken2:</variable>
@@ -463,6 +500,9 @@
 					<filepath>Resource/CalDAV/sharing/notification-sync/2.xml</filepath>
 				</data>
 				<verify>
+          <require-feature>
+            <feature>dropbox</feature>
+          </require-feature>
 					<callback>multistatusItems</callback>
 					<arg>
 						<name>okhrefs</name>
@@ -474,6 +514,17 @@
 						<value>$dropbox:/</value>
 					</arg>
 				</verify>
+        <verify>
+          <exclude-feature>
+            <feature>dropbox</feature>
+          </exclude-feature>
+          <callback>multistatusItems</callback>
+          <arg>
+            <name>okhrefs</name>
+            <value>$calendar_home_items_initial_sync:</value>
+            <value>$sharedcalendarbasename:/</value>
+          </arg>
+        </verify>
 				<grabelement>
 					<name>/{DAV:}multistatus/{DAV:}sync-token</name>
 					<variable>$synctoken2:</variable>
@@ -686,6 +737,9 @@
 					<filepath>Resource/CalDAV/sharing/notification-sync/2.xml</filepath>
 				</data>
 				<verify>
+          <require-feature>
+            <feature>dropbox</feature>
+          </require-feature>
 					<callback>multistatusItems</callback>
 					<arg>
 						<name>okhrefs</name>
@@ -697,6 +751,17 @@
 						<value>$dropbox:/</value>
 					</arg>
 				</verify>
+        <verify>
+          <exclude-feature>
+            <feature>dropbox</feature>
+          </exclude-feature>
+          <callback>multistatusItems</callback>
+          <arg>
+            <name>okhrefs</name>
+            <value>$calendar_home_items_initial_sync:</value>
+            <value>$sharedcalendarbasename:/</value>
+          </arg>
+        </verify>
 				<grabelement>
 					<name>/{DAV:}multistatus/{DAV:}sync-token</name>
 					<variable>$synctoken2:</variable>
@@ -947,6 +1012,9 @@
 					<filepath>Resource/CalDAV/sharing/notification-sync/2.xml</filepath>
 				</data>
 				<verify>
+          <require-feature>
+            <feature>dropbox</feature>
+          </require-feature>
 					<callback>multistatusItems</callback>
 					<arg>
 						<name>okhrefs</name>
@@ -959,6 +1027,18 @@
 						<value>$dropbox:/</value>
 					</arg>
 				</verify>
+        <verify>
+          <exclude-feature>
+            <feature>dropbox</feature>
+          </exclude-feature>
+          <callback>multistatusItems</callback>
+          <arg>
+            <name>okhrefs</name>
+            <value>$calendar_home_items_initial_sync:</value>
+            <value>$sharedcalendarbasename:/</value>
+            <value>$sharedcalendarbasename:/1.ics</value>
+          </arg>
+        </verify>
 				<grabelement>
 					<name>/{DAV:}multistatus/{DAV:}sync-token</name>
 					<variable>$synctoken2:</variable>
