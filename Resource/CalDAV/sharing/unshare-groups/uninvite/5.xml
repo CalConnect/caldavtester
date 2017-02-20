@@ -13,7 +13,7 @@
     </hosturl>
     <organizer>
       <href xmlns='DAV:'>$sharingorganizeruri1:</href>
-      <common-name>User 01</common-name>
+      <common-name>$username1:</common-name>
     </organizer>
     <summary>The Shared Calendar</summary>
     <supported-calendar-component-set xmlns='urn:ietf:params:xml:ns:caldav'>

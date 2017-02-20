@@ -7,7 +7,7 @@
           <user>
             <uid></uid>
             <href xmlns='DAV:'>$cuaddrurn2:</href>
-            <common-name>User 02</common-name>
+            <common-name>$username2:</common-name>
             <access>
               <read/>
             </access>
