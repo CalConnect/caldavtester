@@ -2471,11 +2471,11 @@
 					<filepath>Resource/CalDAV/reports/timerangequery/11.xml</filepath>
 				</data>
 				<verify>
-					<callback>statusCode</callback>
-					<arg>
-						<name>status</name>
-						<value>400</value>
-					</arg>
+          <callback>prepostcondition</callback>
+          <arg>
+            <name>error</name>
+            <value>{urn:ietf:params:xml:ns:caldav}valid-filter</value>
+          </arg>
 				</verify>
 			</request>
 		</test>
