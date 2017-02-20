@@ -1018,7 +1018,7 @@
 				<method>PROPPATCH</method>
 				<ruri>$calendarhome1:/shared/</ruri>
 				<data>
-					<content-type>text/vcard; charset=utf-8</content-type>
+					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/sync/17.xml</filepath>
 				</data>
 				<verify>
@@ -1178,7 +1178,7 @@
 				<method>PROPPATCH</method>
 				<ruri>$calendarhome2:/$sharedcalendar:/</ruri>
 				<data>
-					<content-type>text/vcard; charset=utf-8</content-type>
+					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/sync/17.xml</filepath>
 				</data>
 				<verify>
