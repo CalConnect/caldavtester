@@ -63,6 +63,9 @@
 			</request>
 		</test>
 		<test name='3'>
+      <require-feature>
+        <feature>disallow-propfind-depth-infinite</feature>
+      </require-feature>
 			<description>PROPFIND of basic properties depth=infinity</description>
 			<request>
 				<method>PROPFIND</method>
@@ -146,6 +149,9 @@
 			</request>
 		</test>
 		<test name='3'>
+      <require-feature>
+        <feature>disallow-propfind-depth-infinite</feature>
+      </require-feature>
 			<description>PROPFIND of basic properties depth=infinity</description>
 			<request>
 				<method>PROPFIND</method>
@@ -296,6 +302,9 @@
 			</request>
 		</test>
 		<test name='3'>
+      <require-feature>
+        <feature>disallow-propfind-depth-infinite</feature>
+      </require-feature>
 			<description>PROPFIND of property names depth=infinity</description>
 			<request>
 				<method>PROPFIND</method>
@@ -357,6 +366,9 @@
 			</request>
 		</test>
 		<test name='3'>
+      <require-feature>
+        <feature>disallow-propfind-depth-infinite</feature>
+      </require-feature>
 			<description>PROPFIND of all properties depth=infinity</description>
 			<request>
 				<method>PROPFIND</method>
@@ -446,6 +458,9 @@
 	</test-suite>
 	
 	<test-suite name='Depth:infinity disabled'>
+    <require-feature>
+      <feature>disallow-propfind-depth-infinite</feature>
+    </require-feature>
 		<test name='1'>
 			<require-feature>
 				<feature>own-root</feature>
