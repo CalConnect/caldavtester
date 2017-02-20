@@ -285,6 +285,9 @@
 				</grabelement>
 			</request>
 			<request user="$userid2:" pswd="$pswd2:">
+        <require-feature>
+          <feature>Sync invalid token</feature>
+        </require-feature>
 				<method>REPORT</method>
 				<ruri>$calendarhome2:/</ruri>
 				<data>

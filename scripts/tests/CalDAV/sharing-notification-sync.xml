@@ -465,6 +465,9 @@
 			</request>
 		</test>
 		<test name='6-'>
+      <require-feature>
+        <feature>Sync invalid token</feature>
+      </require-feature>
 			<description>bad sync token</description>
 			<request user="$userid2:" pswd="$pswd2:">
 				<method>REPORT</method>
@@ -702,6 +705,9 @@
 			</request>
 		</test>
 		<test name='6-'>
+      <require-feature>
+        <feature>Sync invalid token</feature>
+      </require-feature>
 			<description>bad sync token</description>
 			<request user="$userid2:" pswd="$pswd2:">
 				<method>REPORT</method>
@@ -977,6 +983,9 @@
 			</request>
 		</test>
 		<test name='6-'>
+      <require-feature>
+        <feature>Sync invalid token</feature>
+      </require-feature>
 			<description>bad sync token</description>
 			<request user="$userid2:" pswd="$pswd2:">
 				<method>REPORT</method>

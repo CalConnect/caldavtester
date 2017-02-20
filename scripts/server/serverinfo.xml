@@ -38,6 +38,7 @@
 		<feature>COPY Method</feature>							<!-- COPY method -->
 		<feature>MOVE Method</feature>							<!-- MOVE method -->
 		<feature>Extended MKCOL</feature>						<!-- Extended MKCOL -->
+    <feature>Sync invalid token</feature>				<!-- Sync report can recognize invalid tokens -->
 
 		<!-- ACL related -->
 		<feature>ACL Method</feature>							<!-- ACL method -->
