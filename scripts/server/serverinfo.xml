@@ -33,11 +33,13 @@
     <!--  Standard CalDAV features that may not be supported -->
     <feature>CalDAV text-match</feature>							<!-- Text match in calendar query -->
     <feature>this-and-future</feature>                <!-- is supported  -->
+    <feature>shared-properties-mod</feature>          <!-- Modification of shared properties on collection  -->
 
 		<!--  Generic WebDAV extensions -->
 		<feature>COPY Method</feature>							<!-- COPY method -->
 		<feature>MOVE Method</feature>							<!-- MOVE method -->
 		<feature>Extended MKCOL</feature>						<!-- Extended MKCOL -->
+    <feature>Sync invalid token</feature>				<!-- Sync report can recognize invalid tokens -->
 
 		<!-- ACL related -->
 		<feature>ACL Method</feature>							<!-- ACL method -->
@@ -48,6 +50,7 @@
 		<feature>calendarserver-principal-search REPORT</feature>	<!-- ACL calendarserver-principal-search REPORT -->
 
 		<feature>add-member</feature>					<!-- Add-member used to create resources -->
+    <feature>disallow-propfind-depth-infinite</feature>		<!-- Depth infinity disallowed on PROPFIND -->
 		<!-- <feature>auth-on-root</feature> -->		<!-- Whether the server requires authentication on the root URI -->
 		<feature>brief</feature>					    <!-- Brief header for PROPFIND, REPORT -->
 		<feature>bulk-post</feature>					<!-- Bulk POST requests -->

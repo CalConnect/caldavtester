@@ -1221,6 +1221,9 @@
 			</request>
 		</test>
 		<test name='17a'>
+      <exclude-feature>
+        <feature>split-calendars</feature>
+      </exclude-feature>
 			<description>query for resources with VCALENDAR &amp; VEVENT and VTODO defined</description>
 			<request>
 				<method>REPORT</method>
@@ -2035,6 +2038,9 @@
 			</request>
 		</test>
 		<test name='2'>
+      <exclude-feature>
+        <feature>split-calendars</feature>
+      </exclude-feature>
 			<description>query for VEVENT and VFREEBUSYs that have a CREATED/DTSTAMP within time range</description>
 			<request>
 				<method>REPORT</method>
@@ -2465,11 +2471,11 @@
 					<filepath>Resource/CalDAV/reports/timerangequery/11.xml</filepath>
 				</data>
 				<verify>
-					<callback>statusCode</callback>
-					<arg>
-						<name>status</name>
-						<value>400</value>
-					</arg>
+          <callback>prepostcondition</callback>
+          <arg>
+            <name>error</name>
+            <value>{urn:ietf:params:xml:ns:caldav}valid-filter</value>
+          </arg>
 				</verify>
 			</request>
 		</test>
@@ -2529,6 +2535,9 @@
 			</request>
 		</test>
 		<test name='19a'>
+      <exclude-feature>
+        <feature>split-calendars</feature>
+      </exclude-feature>
 			<description>query for VEVENTS and VTODOs within time range</description>
 			<request>
 				<method>REPORT</method>
@@ -2656,6 +2665,9 @@
 			</request>
 		</test>
 		<test name='21a'>
+      <exclude-feature>
+        <feature>split-calendars</feature>
+      </exclude-feature>
 			<description>query for VEVENTS and VTODOs with start only</description>
 			<request>
 				<method>REPORT</method>
@@ -2825,6 +2837,9 @@
 			</request>
 		</test>
 		<test name='23a'>
+      <exclude-feature>
+        <feature>split-calendars</feature>
+      </exclude-feature>
 			<description>query for VEVENTS with start only and all VTODOs</description>
 			<request>
 				<method>REPORT</method>

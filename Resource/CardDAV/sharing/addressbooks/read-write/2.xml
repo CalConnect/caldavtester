@@ -13,7 +13,7 @@
     </hosturl>
     <organizer>
       <href xmlns='DAV:'>$cuaddrurn1:</href>
-      <common-name>User 01</common-name>
+      <common-name>$username1:</common-name>
     </organizer>
     <summary>My Main Shared Address Book</summary>
   </invite-notification>

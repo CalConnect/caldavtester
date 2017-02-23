@@ -285,6 +285,9 @@
 				</grabelement>
 			</request>
 			<request user="$userid2:" pswd="$pswd2:">
+        <require-feature>
+          <feature>Sync invalid token</feature>
+        </require-feature>
 				<method>REPORT</method>
 				<ruri>$calendarhome2:/</ruri>
 				<data>
@@ -1015,7 +1018,7 @@
 				<method>PROPPATCH</method>
 				<ruri>$calendarhome1:/shared/</ruri>
 				<data>
-					<content-type>text/vcard; charset=utf-8</content-type>
+					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/sync/17.xml</filepath>
 				</data>
 				<verify>
@@ -1170,12 +1173,15 @@
 			</request>
 		</test>
 		<test name='10'>
+      <require-feature>
+        <feature>shared-properties-mod</feature>
+      </require-feature>
 			<description>Change a property by user 2</description>
 			<request user="$userid2:" pswd="$pswd2:">
 				<method>PROPPATCH</method>
 				<ruri>$calendarhome2:/$sharedcalendar:/</ruri>
 				<data>
-					<content-type>text/vcard; charset=utf-8</content-type>
+					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/reports/sync/17.xml</filepath>
 				</data>
 				<verify>
@@ -1184,6 +1190,9 @@
 			</request>
 		</test>
 		<test name='11'>
+      <require-feature>
+        <feature>shared-properties-mod</feature>
+      </require-feature>
 			<description>Sync for user 1</description>
 			<request>
 				<method>REPORT</method>
@@ -1217,6 +1226,9 @@
 			</request>
 		</test>
 		<test name='12'>
+      <require-feature>
+        <feature>shared-properties-mod</feature>
+      </require-feature>
 			<description>Sync for user 2</description>
 			<request user="$userid2:" pswd="$pswd2:">
 				<method>REPORT</method>
@@ -1250,6 +1262,9 @@
 			</request>
 		</test>
 		<test name='13'>
+      <require-feature>
+        <feature>shared-properties-mod</feature>
+      </require-feature>
 			<description>Remove a property by user 1</description>
 			<request user="$userid2:" pswd="$pswd2:">
 				<method>PROPPATCH</method>
@@ -1264,6 +1279,9 @@
 			</request>
 		</test>
 		<test name='14'>
+      <require-feature>
+        <feature>shared-properties-mod</feature>
+      </require-feature>
 			<description>Sync for user 1</description>
 			<request>
 				<method>REPORT</method>
@@ -1297,6 +1315,9 @@
 			</request>
 		</test>
 		<test name='15'>
+      <require-feature>
+        <feature>shared-properties-mod</feature>
+      </require-feature>
 			<description>Sync for user 2</description>
 			<request user="$userid2:" pswd="$pswd2:">
 				<method>REPORT</method>
@@ -1637,6 +1658,9 @@
 			</request>
 		</test>
 		<test name='10'>
+      <require-feature>
+        <feature>shared-properties-mod</feature>
+      </require-feature>
 			<description>Change a property by user 2</description>
 			<request user="$userid2:" pswd="$pswd2:">
 				<method>PROPPATCH</method>
@@ -1651,6 +1675,9 @@
 			</request>
 		</test>
 		<test name='11'>
+      <require-feature>
+        <feature>shared-properties-mod</feature>
+      </require-feature>
 			<description>Sync for user 1</description>
 			<request>
 				<method>REPORT</method>
@@ -1684,6 +1711,9 @@
 			</request>
 		</test>
 		<test name='12'>
+      <require-feature>
+        <feature>shared-properties-mod</feature>
+      </require-feature>
 			<description>Sync for user 2</description>
 			<request user="$userid2:" pswd="$pswd2:">
 				<method>REPORT</method>
@@ -1717,6 +1747,9 @@
 			</request>
 		</test>
 		<test name='13'>
+      <require-feature>
+        <feature>shared-properties-mod</feature>
+      </require-feature>
 			<description>Remove a property by user 1</description>
 			<request user="$userid2:" pswd="$pswd2:">
 				<method>PROPPATCH</method>
@@ -1731,6 +1764,9 @@
 			</request>
 		</test>
 		<test name='14'>
+      <require-feature>
+        <feature>shared-properties-mod</feature>
+      </require-feature>
 			<description>Sync for user 1</description>
 			<request>
 				<method>REPORT</method>
@@ -1764,6 +1800,9 @@
 			</request>
 		</test>
 		<test name='15'>
+      <require-feature>
+        <feature>shared-properties-mod</feature>
+      </require-feature>
 			<description>Sync for user 2</description>
 			<request user="$userid2:" pswd="$pswd2:">
 				<method>REPORT</method>

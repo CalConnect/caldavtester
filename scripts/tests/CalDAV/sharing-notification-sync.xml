@@ -90,7 +90,7 @@
 				<ruri>$notificationpath1:/</ruri>
 				<header>
 					<name>Depth</name>
-					<value>1</value>
+					<value>0</value>
 				</header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
@@ -117,7 +117,7 @@
 				<ruri>$notificationpath2:/</ruri>
 				<header>
 					<name>Depth</name>
-					<value>1</value>
+					<value>0</value>
 				</header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
@@ -238,11 +238,11 @@
 				<ruri>$calendarhome1:/</ruri>
 				<header>
 					<name>Depth</name>
-					<value>infinity</value>
+					<value>0</value>
 				</header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
-					<filepath>Resource/CalDAV/sharing/notification-sync/2.xml</filepath>
+					<filepath>Resource/CalDAV/sharing/notification-sync/14.xml</filepath>
 				</data>
 				<verify>
           <require-feature>
@@ -292,11 +292,11 @@
 				<ruri>$calendarhome2:/</ruri>
 				<header>
 					<name>Depth</name>
-					<value>infinity</value>
+					<value>0</value>
 				</header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
-					<filepath>Resource/CalDAV/sharing/notification-sync/2.xml</filepath>
+					<filepath>Resource/CalDAV/sharing/notification-sync/14.xml</filepath>
 				</data>
 				<verify>
           <require-feature>
@@ -465,6 +465,9 @@
 			</request>
 		</test>
 		<test name='6-'>
+      <require-feature>
+        <feature>Sync invalid token</feature>
+      </require-feature>
 			<description>bad sync token</description>
 			<request user="$userid2:" pswd="$pswd2:">
 				<method>REPORT</method>
@@ -493,11 +496,11 @@
 				<ruri>$calendarhome2:/</ruri>
 				<header>
 					<name>Depth</name>
-					<value>infinity</value>
+					<value>0</value>
 				</header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
-					<filepath>Resource/CalDAV/sharing/notification-sync/2.xml</filepath>
+					<filepath>Resource/CalDAV/sharing/notification-sync/14.xml</filepath>
 				</data>
 				<verify>
           <require-feature>
@@ -702,6 +705,9 @@
 			</request>
 		</test>
 		<test name='6-'>
+      <require-feature>
+        <feature>Sync invalid token</feature>
+      </require-feature>
 			<description>bad sync token</description>
 			<request user="$userid2:" pswd="$pswd2:">
 				<method>REPORT</method>
@@ -730,11 +736,11 @@
 				<ruri>$calendarhome2:/</ruri>
 				<header>
 					<name>Depth</name>
-					<value>infinity</value>
+					<value>0</value>
 				</header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
-					<filepath>Resource/CalDAV/sharing/notification-sync/2.xml</filepath>
+					<filepath>Resource/CalDAV/sharing/notification-sync/14.xml</filepath>
 				</data>
 				<verify>
           <require-feature>
@@ -790,7 +796,7 @@
 				</header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
-					<filepath>Resource/CalDAV/sharing/notification-sync/2.xml</filepath>
+					<filepath>Resource/CalDAV/sharing/notification-sync/14.xml</filepath>
 				</data>
 				<verify>
 					<callback>statusCode</callback>
@@ -977,13 +983,16 @@
 			</request>
 		</test>
 		<test name='6-'>
+      <require-feature>
+        <feature>Sync invalid token</feature>
+      </require-feature>
 			<description>bad sync token</description>
 			<request user="$userid2:" pswd="$pswd2:">
 				<method>REPORT</method>
 				<ruri>$calendarhome2:/</ruri>
 				<header>
 					<name>Depth</name>
-					<value>infinity</value>
+					<value>0</value>
 				</header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
@@ -1005,11 +1014,11 @@
 				<ruri>$calendarhome2:/</ruri>
 				<header>
 					<name>Depth</name>
-					<value>infinity</value>
+					<value>0</value>
 				</header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
-					<filepath>Resource/CalDAV/sharing/notification-sync/2.xml</filepath>
+					<filepath>Resource/CalDAV/sharing/notification-sync/14.xml</filepath>
 				</data>
 				<verify>
           <require-feature>
@@ -1052,11 +1061,11 @@
 				<ruri>$calendarhome1:/</ruri>
 				<header>
 					<name>Depth</name>
-					<value>infinity</value>
+					<value>0</value>
 				</header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
-					<filepath>Resource/CalDAV/sharing/notification-sync/2.xml</filepath>
+					<filepath>Resource/CalDAV/sharing/notification-sync/14.xml</filepath>
 				</data>
 				<verify>
 					<callback>statusCode</callback>
@@ -1115,7 +1124,7 @@
 				<ruri>$calendarhome2:/</ruri>
 				<header>
 					<name>Depth</name>
-					<value>infinity</value>
+					<value>0</value>
 				</header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
@@ -1228,7 +1237,7 @@
 				<ruri>$calendarhome1:/</ruri>
 				<header>
 					<name>Depth</name>
-					<value>infinity</value>
+					<value>0</value>
 				</header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
@@ -1376,7 +1385,7 @@
 				<ruri>$calendarhome2:/</ruri>
 				<header>
 					<name>Depth</name>
-					<value>infinity</value>
+					<value>0</value>
 				</header>
 				<data>
 					<content-type>text/xml; charset=utf-8</content-type>
