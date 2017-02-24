@@ -154,7 +154,7 @@
 					</arg>
 					<arg>
 						<name>exists</name>
-						<value>/error-code~$invalid-action</value>
+						<value>/type~$urn:ietf:params:tzdist:error:invalid-action</value>
 					</arg>
 				</verify>
 			</request>
@@ -172,7 +172,7 @@
 					</arg>
 					<arg>
 						<name>exists</name>
-						<value>/error-code~$invalid-action</value>
+						<value>/type~$urn:ietf:params:tzdist:error:invalid-action</value>
 					</arg>
 				</verify>
 			</request>
@@ -213,7 +213,6 @@
 					<callback>jsonPointerMatch</callback>
 					<arg>
 						<name>exists</name>
-						<value>/dtstamp</value>
 						<value>/timezones/./tzid~$America/New_York</value>
 						<value>/timezones/./tzid~$America/Phoenix</value>
 						<value>/timezones/./aliases/.~$GB</value>
@@ -237,7 +236,7 @@
 					</arg>
 					<arg>
 						<name>exists</name>
-						<value>/error-code~$invalid-action</value>
+						<value>/type~$urn:ietf:params:tzdist:error:invalid-action</value>
 					</arg>
 				</verify>
 			</request>
@@ -255,7 +254,7 @@
 					</arg>
 					<arg>
 						<name>exists</name>
-						<value>/error-code~$tzid-not-found</value>
+						<value>/type~$urn:ietf:params:tzdist:error:tzid-not-found</value>
 					</arg>
 				</verify>
 			</request>
@@ -333,7 +332,7 @@
 			<description>GET on resource - no tzid</description>
 			<request>
 				<method>GET</method>
-				<ruri>$timezonestdservice:/observances</ruri>
+				<ruri>$timezonestdservice:/zones/observances</ruri>
 				<verify>
 					<callback>jsonPointerMatch</callback>
 					<arg>
@@ -342,7 +341,7 @@
 					</arg>
 					<arg>
 						<name>exists</name>
-						<value>/error-code~$invalid-action</value>
+						<value>/type~$urn:ietf:params:tzdist:error:invalid-action</value>
 					</arg>
 				</verify>
 			</request>
@@ -351,7 +350,7 @@
 			<description>GET on resource - multiple tzid</description>
 			<request>
 				<method>GET</method>
-				<ruri quote="no">$timezonestdservice:/observances/America%2FNew_York/America%2FLos_Angeles</ruri>
+				<ruri quote="no">$timezonestdservice:/zones/America%2FNew_York/America%2FLos_Angeles/observances</ruri>
 				<verify>
 					<callback>jsonPointerMatch</callback>
 					<arg>
@@ -360,7 +359,7 @@
 					</arg>
 					<arg>
 						<name>exists</name>
-						<value>/error-code~$invalid-action</value>
+						<value>/type~$urn:ietf:params:tzdist:error:invalid-action</value>
 					</arg>
 				</verify>
 			</request>
@@ -369,7 +368,7 @@
 			<description>GET on resource - missing tzid</description>
 			<request>
 				<method>GET</method>
-				<ruri quote="no">$timezonestdservice:/observances/America%2FPittsburgh?start=2008-01-01T00:00:00Z&amp;end=2020-01-01T00:00:00Z</ruri>
+				<ruri quote="no">$timezonestdservice:/zones/America%2FPittsburgh/observances?start=2008-01-01T00:00:00Z&amp;end=2020-01-01T00:00:00Z</ruri>
 				<verify>
 					<callback>jsonPointerMatch</callback>
 					<arg>
@@ -378,7 +377,7 @@
 					</arg>
 					<arg>
 						<name>exists</name>
-						<value>/error-code~$tzid-not-found</value>
+						<value>/type~$urn:ietf:params:tzdist:error:tzid-not-found</value>
 					</arg>
 				</verify>
 			</request>
@@ -387,7 +386,7 @@
 			<description>GET on resource - too many start</description>
 			<request>
 				<method>GET</method>
-				<ruri quote="no">$timezonestdservice:/observances/America%2FNew_York?start=2008-01-01T00:00:00Z&amp;start=2009-01-01T00:00:00Z</ruri>
+				<ruri quote="no">$timezonestdservice:/zones/America%2FNew_York/observances?start=2008-01-01T00:00:00Z&amp;start=2009-01-01T00:00:00Z</ruri>
 				<verify>
 					<callback>jsonPointerMatch</callback>
 					<arg>
@@ -396,7 +395,7 @@
 					</arg>
 					<arg>
 						<name>exists</name>
-						<value>/error-code~$invalid-start</value>
+						<value>/type~$urn:ietf:params:tzdist:error:invalid-start</value>
 					</arg>
 				</verify>
 			</request>
@@ -405,7 +404,7 @@
 			<description>GET on resource - no start</description>
 			<request>
 				<method>GET</method>
-				<ruri quote="no">$timezonestdservice:/observances/America%2FNew_York</ruri>
+				<ruri quote="no">$timezonestdservice:/zones/America%2FNew_York/observances</ruri>
 				<verify>
 					<callback>jsonPointerMatch</callback>
 					<arg>
@@ -414,7 +413,7 @@
 					</arg>
 					<arg>
 						<name>exists</name>
-						<value>/error-code~$invalid-start</value>
+						<value>/type~$urn:ietf:params:tzdist:error:invalid-start</value>
 					</arg>
 				</verify>
 			</request>
@@ -423,7 +422,7 @@
 			<description>GET on resource - invalid start</description>
 			<request>
 				<method>GET</method>
-				<ruri quote="no">$timezonestdservice:/observances/America%2FNew_York?start=20070101</ruri>
+				<ruri quote="no">$timezonestdservice:/zones/America%2FNew_York/observances?start=20070101</ruri>
 				<verify>
 					<callback>jsonPointerMatch</callback>
 					<arg>
@@ -432,7 +431,7 @@
 					</arg>
 					<arg>
 						<name>exists</name>
-						<value>/error-code~$invalid-start</value>
+						<value>/type~$urn:ietf:params:tzdist:error:invalid-start</value>
 					</arg>
 				</verify>
 			</request>
@@ -441,7 +440,7 @@
 			<description>GET on resource - too many end</description>
 			<request>
 				<method>GET</method>
-				<ruri quote="no">$timezonestdservice:/observances/America%2FNew_York?start=2008-01-01T00:00:00Z&amp;end=2009-01-01T00:00:00Z&amp;end=2009</ruri>
+				<ruri quote="no">$timezonestdservice:/zones/America%2FNew_York/observances?start=2008-01-01T00:00:00Z&amp;end=2009-01-01T00:00:00Z&amp;end=2009</ruri>
 				<verify>
 					<callback>jsonPointerMatch</callback>
 					<arg>
@@ -450,7 +449,7 @@
 					</arg>
 					<arg>
 						<name>exists</name>
-						<value>/error-code~$invalid-end</value>
+						<value>/type~$urn:ietf:params:tzdist:error:invalid-end</value>
 					</arg>
 				</verify>
 			</request>
@@ -459,7 +458,7 @@
 			<description>GET on resource - invalid end</description>
 			<request>
 				<method>GET</method>
-				<ruri quote="no">$timezonestdservice:/observances/America%2FNew_York?start=2008-01-01T00:00:00Z&amp;end=2009</ruri>
+				<ruri quote="no">$timezonestdservice:/zones/America%2FNew_York/observances?start=2008-01-01T00:00:00Z&amp;end=2009</ruri>
 				<verify>
 					<callback>jsonPointerMatch</callback>
 					<arg>
@@ -468,7 +467,7 @@
 					</arg>
 					<arg>
 						<name>exists</name>
-						<value>/error-code~$invalid-end</value>
+						<value>/type~$urn:ietf:params:tzdist:error:invalid-end</value>
 					</arg>
 				</verify>
 			</request>
@@ -477,7 +476,7 @@
 			<description>GET on resource - start > end</description>
 			<request>
 				<method>GET</method>
-				<ruri quote="no">$timezonestdservice:/observances/America%2FNew_York?start=2009-01-01T00:00:00Z&amp;end=2008-01-01T00:00:00Z</ruri>
+				<ruri quote="no">$timezonestdservice:/zones/America%2FNew_York/observances?start=2009-01-01T00:00:00Z&amp;end=2008-01-01T00:00:00Z</ruri>
 				<verify>
 					<callback>jsonPointerMatch</callback>
 					<arg>
@@ -486,7 +485,7 @@
 					</arg>
 					<arg>
 						<name>exists</name>
-						<value>/error-code~$invalid-end</value>
+						<value>/type~$urn:ietf:params:tzdist:error:invalid-end</value>
 					</arg>
 				</verify>
 			</request>
@@ -495,7 +494,7 @@
 			<description>GET on resource - start == end</description>
 			<request>
 				<method>GET</method>
-				<ruri quote="no">$timezonestdservice:/observances/America%2FNew_York?start=2008-01-01T00:00:00Z&amp;end=2008-01-01T00:00:00Z</ruri>
+				<ruri quote="no">$timezonestdservice:/zones/America%2FNew_York/observances?start=2008-01-01T00:00:00Z&amp;end=2008-01-01T00:00:00Z</ruri>
 				<verify>
 					<callback>jsonPointerMatch</callback>
 					<arg>
@@ -504,7 +503,7 @@
 					</arg>
 					<arg>
 						<name>exists</name>
-						<value>/error-code~$invalid-end</value>
+						<value>/type~$urn:ietf:params:tzdist:error:invalid-end</value>
 					</arg>
 				</verify>
 			</request>
@@ -516,12 +515,11 @@
 			<description>GET on resource - simple range</description>
 			<request>
 				<method>GET</method>
-				<ruri quote="no">$timezonestdservice:/observances/America%2FNew_York?start=2008-01-01T00:00:00Z&amp;end=2009-01-01T00:00:00Z</ruri>
+				<ruri quote="no">$timezonestdservice:/zones/America%2FNew_York/observances?start=2008-01-01T00:00:00Z&amp;end=2009-01-01T00:00:00Z</ruri>
 				<verify>
 					<callback>jsonPointerMatch</callback>
 					<arg>
 						<name>exists</name>
-						<value>/dtstamp</value>
 						<value>/tzid~$America/New_York</value>
 						<value>/observances/./onset~$2008-01-01T00:00:00Z</value>
 						<value>/observances/./onset~$2008-03-09T07:00:00Z</value>
@@ -538,12 +536,11 @@
 			<description>GET on resource - complex range</description>
 			<request>
 				<method>GET</method>
-				<ruri quote="no">$timezonestdservice:/observances/America%2FNew_York?start=2006-01-01T00:00:00Z&amp;end=2008-01-01T00:00:00Z</ruri>
+				<ruri quote="no">$timezonestdservice:/zones/America%2FNew_York/observances?start=2006-01-01T00:00:00Z&amp;end=2008-01-01T00:00:00Z</ruri>
 				<verify>
 					<callback>jsonPointerMatch</callback>
 					<arg>
 						<name>exists</name>
-						<value>/dtstamp</value>
 						<value>/tzid~$America/New_York</value>
 						<value>/observances/./onset~$2006-01-01T00:00:00Z</value>
 						<value>/observances/./onset~$2006-04-02T07:00:00Z</value>
@@ -562,7 +559,7 @@
 			<description>GET on resource - no DST</description>
 			<request>
 				<method>GET</method>
-				<ruri quote="no">$timezonestdservice:/observances/America%2FPhoenix?start=2006-01-01T00:00:00Z&amp;end=2009-01-01T00:00:00Z</ruri>
+				<ruri quote="no">$timezonestdservice:/zones/America%2FPhoenix/observances?start=2006-01-01T00:00:00Z&amp;end=2009-01-01T00:00:00Z</ruri>
 				<verify>
 					<callback>statusCode</callback>
 				</verify>
@@ -585,12 +582,11 @@
 			<description>GET on resource trailing slash - simple range</description>
 			<request>
 				<method>GET</method>
-				<ruri quote="no">$timezonestdservice:/observances/America%2FNew_York/?start=2008-01-01T00:00:00Z&amp;end=2009-01-01T00:00:00Z</ruri>
+				<ruri quote="no">$timezonestdservice:/zones/America%2FNew_York/observances/?start=2008-01-01T00:00:00Z&amp;end=2009-01-01T00:00:00Z</ruri>
 				<verify>
 					<callback>jsonPointerMatch</callback>
 					<arg>
 						<name>exists</name>
-						<value>/dtstamp</value>
 						<value>/tzid~$America/New_York</value>
 						<value>/observances/./onset~$2008-01-01T00:00:00Z</value>
 						<value>/observances/./onset~$2008-03-09T07:00:00Z</value>
@@ -620,7 +616,7 @@
 					</arg>
 					<arg>
 						<name>exists</name>
-						<value>/error-code~$invalid-pattern</value>
+						<value>/type~$urn:ietf:params:tzdist:error:invalid-pattern</value>
 					</arg>
 				</verify>
 			</request>
@@ -638,7 +634,7 @@
 					</arg>
 					<arg>
 						<name>exists</name>
-						<value>/error-code~$invalid-pattern</value>
+						<value>/type~$urn:ietf:params:tzdist:error:invalid-pattern</value>
 					</arg>
 				</verify>
 			</request>
@@ -656,7 +652,7 @@
 					</arg>
 					<arg>
 						<name>exists</name>
-						<value>/error-code~$invalid-pattern</value>
+						<value>/type~$urn:ietf:params:tzdist:error:invalid-pattern</value>
 					</arg>
 				</verify>
 			</request>
@@ -673,7 +669,6 @@
 					<callback>jsonPointerMatch</callback>
 					<arg>
 						<name>exists</name>
-						<value>/dtstamp</value>
 						<value>/timezones/./tzid~$America/New_York</value>
 					</arg>
 				</verify>
@@ -688,7 +683,6 @@
 					<callback>jsonPointerMatch</callback>
 					<arg>
 						<name>exists</name>
-						<value>/dtstamp</value>
 						<value>/timezones/./tzid~$America/New_York</value>
 					</arg>
 				</verify>
@@ -703,7 +697,6 @@
 					<callback>jsonPointerMatch</callback>
 					<arg>
 						<name>exists</name>
-						<value>/dtstamp</value>
 						<value>/timezones/./tzid~$America/New_York</value>
 					</arg>
 				</verify>
@@ -718,7 +711,6 @@
 					<callback>jsonPointerMatch</callback>
 					<arg>
 						<name>exists</name>
-						<value>/dtstamp</value>
 						<value>/timezones/./tzid~$America/New_York</value>
 					</arg>
 				</verify>
@@ -733,7 +725,6 @@
 					<callback>jsonPointerMatch</callback>
 					<arg>
 						<name>exists</name>
-						<value>/dtstamp</value>
 						<value>/timezones/./tzid~$America/New_York</value>
 					</arg>
 				</verify>
@@ -748,7 +739,6 @@
 					<callback>jsonPointerMatch</callback>
 					<arg>
 						<name>exists</name>
-						<value>/dtstamp</value>
 						<value>/timezones/./tzid~$America/New_York</value>
 					</arg>
 				</verify>
@@ -763,7 +753,6 @@
 					<callback>jsonPointerMatch</callback>
 					<arg>
 						<name>exists</name>
-						<value>/dtstamp</value>
 						<value>/timezones/./tzid~$Africa/Lagos</value>
 						<value>/timezones/./tzid~$Africa/Maputo</value>
 						<value>/timezones/./tzid~$Africa/Abidjan</value>
@@ -784,7 +773,6 @@
 					<callback>jsonPointerMatch</callback>
 					<arg>
 						<name>exists</name>
-						<value>/dtstamp</value>
 						<value>/timezones/./tzid~$America/New_York</value>
 					</arg>
 				</verify>
@@ -799,7 +787,6 @@
 					<callback>jsonPointerMatch</callback>
 					<arg>
 						<name>exists</name>
-						<value>/dtstamp</value>
 						<value>/timezones/./tzid~$America/New_York</value>
 					</arg>
 				</verify>
@@ -809,6 +796,9 @@
 
 	<test-suite name='PROPFIND timezone-service-set'>
 		<test name='1'>
+			<require-feature>
+				<feature>timezones-by-reference</feature>
+			</require-feature>
 			<description>PROPFIND on home resource</description>
 			<request>
 				<method>PROPFIND</method>
