@@ -40,6 +40,9 @@
 		<feature>MOVE Method</feature>							<!-- MOVE method -->
 		<feature>Extended MKCOL</feature>						<!-- Extended MKCOL -->
     <feature>Sync invalid token</feature>				<!-- Sync report can recognize invalid tokens -->
+    
+    <!-- VTODO related -->
+    <feature>vtodo-supported</feature>          <!-- Big switch to turn off VTODO tests -->
 
 		<!-- ACL related -->
 		<feature>ACL Method</feature>							<!-- ACL method -->
