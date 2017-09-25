@@ -116,6 +116,9 @@
 	</test-suite>
 	
 	<test-suite name='Put VTODO'>
+    <require-feature>
+      <feature>vtodo-supported</feature>
+    </require-feature>
 		<test name='1'>
 			<description>Plain VTODO with no date</description>
 			<request end-delete='yes'>
