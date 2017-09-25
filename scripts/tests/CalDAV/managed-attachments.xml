@@ -226,6 +226,7 @@
 					<arg>
 						<name>status</name>
 						<value>403</value>
+						<value>404</value>
 					</arg>
 				</verify>
 			</request>
@@ -285,6 +286,7 @@
 					<arg>
 						<name>status</name>
 						<value>403</value>
+						<value>404</value>
 					</arg>
 				</verify>
 			</request>
@@ -499,6 +501,7 @@
 					<arg>
 						<name>status</name>
 						<value>403</value>
+						<value>404</value>
 					</arg>
 				</verify>
 			</request>
@@ -642,6 +645,7 @@
 					<arg>
 						<name>status</name>
 						<value>403</value>
+						<value>404</value>
 					</arg>
 				</verify>
 			</request>
@@ -791,6 +795,7 @@
 					<arg>
 						<name>status</name>
 						<value>403</value>
+						<value>404</value>
 					</arg>
 				</verify>
 			</request>
@@ -815,6 +820,7 @@
 					<arg>
 						<name>status</name>
 						<value>403</value>
+						<value>404</value>
 					</arg>
 				</verify>
 			</request>
@@ -1029,6 +1035,7 @@
 					<arg>
 						<name>status</name>
 						<value>403</value>
+						<value>404</value>
 					</arg>
 				</verify>
 			</request>
@@ -1240,6 +1247,7 @@
 					<arg>
 						<name>status</name>
 						<value>403</value>
+						<value>404</value>
 					</arg>
 				</verify>
 			</request>
@@ -1257,6 +1265,7 @@
 					<arg>
 						<name>status</name>
 						<value>403</value>
+						<value>404</value>
 					</arg>
 				</verify>
 			</request>
@@ -1475,6 +1484,7 @@
 					<arg>
 						<name>status</name>
 						<value>403</value>
+						<value>404</value>
 					</arg>
 				</verify>
 			</request>
@@ -1724,6 +1734,7 @@
 					<arg>
 						<name>status</name>
 						<value>403</value>
+						<value>404</value>
 					</arg>
 				</verify>
 			</request>
@@ -2052,6 +2063,7 @@
 					<arg>
 						<name>status</name>
 						<value>403</value>
+						<value>404</value>
 					</arg>
 				</verify>
 			</request>
@@ -2069,6 +2081,7 @@
 					<arg>
 						<name>status</name>
 						<value>403</value>
+						<value>404</value>
 					</arg>
 				</verify>
 			</request>
@@ -2360,6 +2373,7 @@
 					<arg>
 						<name>status</name>
 						<value>403</value>
+						<value>404</value>
 					</arg>
 				</verify>
 			</request>
@@ -2422,6 +2436,7 @@
 					<arg>
 						<name>status</name>
 						<value>403</value>
+						<value>404</value>
 					</arg>
 				</verify>
 			</request>
@@ -2604,6 +2619,7 @@
 					<arg>
 						<name>status</name>
 						<value>403</value>
+						<value>404</value>
 					</arg>
 				</verify>
 			</request>
