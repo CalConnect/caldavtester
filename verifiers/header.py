@@ -83,6 +83,6 @@ class Verifier(object):
                     result = False
                     if len(resulttxt):
                         resulttxt += "\n"
-                    resulttxt += "        Wrong Response Header Value: %s: %s" % (hdrname, str(hdrs))
+                    resulttxt += "        Wrong Response Header Value: %s: %s does NOT match %s" % (hdrname, str(hdrs), hdrvalue)
 
         return result, resulttxt
