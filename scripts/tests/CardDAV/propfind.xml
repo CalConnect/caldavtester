@@ -25,7 +25,7 @@
 	</require-feature>
 
 	<start/>
-	
+
 	<test-suite name='regular prop finds'>
 		<test name='1'>
 			<description>PROPFIND of basic properties depth=0</description>
@@ -65,6 +65,9 @@
 		</test>
 		<test name='3'>
 			<description>PROPFIND of basic properties depth=infinity</description>
+			<require-feature>
+				<feature>apple-server</feature> <!-- Depth infinity is not forbidden in RFC 4918 (WebDAV), nor in 4791 (CardDAV) -->
+			</require-feature>
 			<request>
 				<method>PROPFIND</method>
 				<ruri>$addressbookpath1:/</ruri>
@@ -124,6 +127,7 @@
 					<callback>statusCode</callback>
 					<arg>
 						<name>status</name>
+						<value>403</value>
 						<value>404</value>
 					</arg>
 				</verify>
@@ -146,6 +150,7 @@
 					<callback>statusCode</callback>
 					<arg>
 						<name>status</name>
+						<value>403</value>
 						<value>404</value>
 					</arg>
 				</verify>
@@ -168,13 +173,14 @@
 					<callback>statusCode</callback>
 					<arg>
 						<name>status</name>
+						<value>403</value>
 						<value>404</value>
 					</arg>
 				</verify>
 			</request>
 		</test>
 	</test-suite>
-	
+
 	<test-suite name='prop names'>
 		<test name='1'>
 			<description>PROPFIND of property names depth=0</description>
@@ -214,6 +220,9 @@
 		</test>
 		<test name='3'>
 			<description>PROPFIND of property names depth=infinity</description>
+			<require-feature>
+				<feature>apple-server</feature> <!-- Depth infinity is not forbidden in RFC 4918 (WebDAV), nor in 4791 (CardDAV) -->
+			</require-feature>
 			<request>
 				<method>PROPFIND</method>
 				<ruri>$addressbookpath1:/</ruri>
@@ -235,7 +244,7 @@
 			</request>
 		</test>
 	</test-suite>
-	
+
 	<test-suite name='prop all'>
 		<test name='1'>
 			<description>PROPFIND of all properties depth=0</description>
@@ -275,6 +284,9 @@
 		</test>
 		<test name='3'>
 			<description>PROPFIND of all properties depth=infinity</description>
+			<require-feature>
+				<feature>apple-server</feature> <!-- Depth infinity is not forbidden in RFC 4918 (WebDAV), nor in 4791 (CardDAV) -->
+			</require-feature>
 			<request>
 				<method>PROPFIND</method>
 				<ruri>$addressbookpath1:/</ruri>
@@ -296,10 +308,10 @@
 			</request>
 		</test>
 	</test-suite>
-	
+
 	<test-suite name='prop errors'>
 		<test name='1'>
-			<description>PROPFIND with invalid elements</description>
+			<description>PROPFIND with invalid elements: &lt;propfind&gt; can only contain either &lt;prop&gt;, &lt;allprop/&gt; or &lt;propname/&gt;</description>
 			<request>
 				<method>PROPFIND</method>
 				<ruri>$addressbookpath1:/</ruri>
@@ -321,7 +333,7 @@
 			</request>
 		</test>
 		<test name='2'>
-			<description>PROPFIND of unknown element</description>
+			<description>PROPFIND of unknown element: &lt;propfind&gt; can only contain either &lt;prop&gt;, &lt;allprop/&gt; or &lt;propname/&gt;</description>
 			<request>
 				<method>PROPFIND</method>
 				<ruri>$addressbookpath1:/</ruri>
@@ -361,7 +373,7 @@
 			</request>
 		</test>
 	</test-suite>
-	
+
 	<end/>
-	
+
 </caldavtest>
