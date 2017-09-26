@@ -271,7 +271,11 @@
 					<filepath>Resource/CalDAV/problemics/2.ics</filepath>
 				</data>
 				<verify>
-					<callback>statusCode</callback>
+					<callback>prepostcondition</callback>
+					<arg>
+						<name>error</name>
+						<value>{urn:ietf:params:xml:ns:caldav}valid-calendar-data</value>
+					</arg>
 				</verify>
 			</request>
 		</test>
@@ -285,7 +289,11 @@
 					<filepath>Resource/CalDAV/problemics/16.ics</filepath>
 				</data>
 				<verify>
-					<callback>statusCode</callback>
+					<callback>prepostcondition</callback>
+					<arg>
+						<name>error</name>
+						<value>{urn:ietf:params:xml:ns:caldav}valid-calendar-data</value>
+					</arg>
 				</verify>
 			</request>
 		</test>
@@ -299,7 +307,11 @@
 					<filepath>Resource/CalDAV/problemics/17.ics</filepath>
 				</data>
 				<verify>
-					<callback>statusCode</callback>
+					<callback>prepostcondition</callback>
+					<arg>
+						<name>error</name>
+						<value>{urn:ietf:params:xml:ns:caldav}valid-calendar-data</value>
+					</arg>
 				</verify>
 			</request>
 		</test>
@@ -327,7 +339,11 @@
 					<filepath>Resource/CalDAV/problemics/4.ics</filepath>
 				</data>
 				<verify>
-					<callback>statusCode</callback>
+					<callback>prepostcondition</callback>
+					<arg>
+						<name>error</name>
+						<value>{urn:ietf:params:xml:ns:caldav}valid-calendar-data</value>
+					</arg>
 				</verify>
 			</request>
 		</test>
@@ -355,7 +371,11 @@
 					<filepath>Resource/CalDAV/problemics/6.ics</filepath>
 				</data>
 				<verify>
-					<callback>statusCode</callback>
+					<callback>prepostcondition</callback>
+					<arg>
+						<name>error</name>
+						<value>{urn:ietf:params:xml:ns:caldav}valid-calendar-data</value>
+					</arg>
 				</verify>
 			</request>
 		</test>
@@ -369,7 +389,11 @@
 					<filepath>Resource/CalDAV/problemics/7.ics</filepath>
 				</data>
 				<verify>
-					<callback>statusCode</callback>
+					<callback>prepostcondition</callback>
+					<arg>
+						<name>error</name>
+						<value>{urn:ietf:params:xml:ns:caldav}valid-calendar-data</value>
+					</arg>
 				</verify>
 			</request>
 		</test>
@@ -383,7 +407,11 @@
 					<filepath>Resource/CalDAV/problemics/8.ics</filepath>
 				</data>
 				<verify>
-					<callback>statusCode</callback>
+					<callback>prepostcondition</callback>
+					<arg>
+						<name>error</name>
+						<value>{urn:ietf:params:xml:ns:caldav}valid-calendar-data</value>
+					</arg>
 				</verify>
 			</request>
 		</test>
@@ -404,6 +432,9 @@
 	</test-suite>
 
 	<test-suite name='Problem VTODOs - various combinations of date-time/date values'>
+		<require-feature>
+			<feature>vtodo-supported</feature>
+		</require-feature>
 		<test name='1'>
 			<description>DTSTART/DATE-TIME/UTC, DUE/DATE</description>
 			<request end-delete='yes'>
