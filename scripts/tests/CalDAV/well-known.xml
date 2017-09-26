@@ -27,10 +27,13 @@
 	</require-feature>
 
 	<start/>
-	
+
 	<test-suite name='Simple GET tests'>
 		<test name='1'>
 			<description>Simple GET on top-level authenticated</description>
+			<require-feature>
+				<feature>apple-server</feature> <!-- /.well-known/ is not required, only redirect below it -->
+			</require-feature>
 			<request>
 				<method>GET</method>
 				<ruri>/.well-known/</ruri>
@@ -41,6 +44,9 @@
 		</test>
 		<test name='2'>
 			<description>Simple GET on top-level unauthenticated</description>
+			<require-feature>
+				<feature>apple-server</feature> <!-- /.well-known/ is not required, only redirect below it -->
+			</require-feature>
 			<request auth='no'>
 				<method>GET</method>
 				<ruri>/.well-known/</ruri>
@@ -59,13 +65,16 @@
 					<arg>
 						<name>status</name>
 						<value>301</value>
+						<value>302</value>
+						<value>307</value>
+						<value>308</value>
 					</arg>
 				</verify>
 				<verify>
 					<callback>header</callback>
 					<arg>
 						<name>header</name>
-						<value>Location$$hostssl:/</value>
+						<value>Location$$host:$root:</value>
 					</arg>
 				</verify>
 			</request>
@@ -80,20 +89,26 @@
 					<arg>
 						<name>status</name>
 						<value>301</value>
+						<value>302</value>
+						<value>307</value>
+						<value>308</value>
 					</arg>
 				</verify>
 				<verify>
 					<callback>header</callback>
 					<arg>
 						<name>header</name>
-						<value>Location$$hostssl:/</value>
+						<value>Location$$host:$root:</value>
 					</arg>
 				</verify>
 			</request>
 		</test>
 	</test-suite>
-	
+
 	<test-suite name='Simple PROPFIND tests'>
+		<require-feature>
+			<feature>apple-server</feature> <!-- CalDAVTester does this test NOT on target of redirect, but direct on /.well-known -->
+		</require-feature>
 		<test name='1'>
 			<description>Simple PROPFIND on top-level authenticated</description>
 			<request>
@@ -142,7 +157,7 @@
 					<callback>header</callback>
 					<arg>
 						<name>header</name>
-						<value>Location$$hostssl:/</value>
+						<value>Location$$host:$root:</value>
 					</arg>
 				</verify>
 			</request>
@@ -161,13 +176,16 @@
 					<arg>
 						<name>status</name>
 						<value>301</value>
+						<value>302</value>
+						<value>307</value>
+						<value>308</value>
 					</arg>
 				</verify>
 				<verify>
 					<callback>header</callback>
 					<arg>
 						<name>header</name>
-						<value>Location$$hostssl:/</value>
+						<value>Location$$host:$root:</value>
 					</arg>
 				</verify>
 			</request>
@@ -208,19 +226,22 @@
 					<arg>
 						<name>status</name>
 						<value>301</value>
+						<value>302</value>
+						<value>307</value>
+						<value>308</value>
 					</arg>
 				</verify>
 				<verify>
 					<callback>header</callback>
 					<arg>
 						<name>header</name>
-						<value>Location$$hostssl:/</value>
+						<value>Location$$host:$root</value>
 					</arg>
 				</verify>
 			</request>
 		</test>
 	</test-suite>
-	
+
 	<end/>
-	
+
 </caldavtest>
