@@ -30,6 +30,8 @@
 	<waitsuccess>30</waitsuccess>
 
 	<features>
+		<!-- <feature>apple-server</server> -->       <!-- feature used to disable diverse Apple specific tests -->
+
     <!--  Standard CalDAV features that may not be supported -->
     <feature>CalDAV text-match</feature>							<!-- Text match in calendar query -->
     <feature>this-and-future</feature>                <!-- is supported  -->
@@ -40,7 +42,7 @@
 		<feature>MOVE Method</feature>							<!-- MOVE method -->
 		<feature>Extended MKCOL</feature>						<!-- Extended MKCOL -->
     <feature>Sync invalid token</feature>				<!-- Sync report can recognize invalid tokens -->
-    
+
     <!-- VTODO related -->
     <feature>vtodo-supported</feature>          <!-- Big switch to turn off VTODO tests -->
 
@@ -873,7 +875,7 @@
 		</substitution>
 
 	</substitutions>
-	
+
     <calendardatafilter>ATTENDEE:X-CALENDARSERVER-DTSTAMP</calendardatafilter>
     <calendardatafilter>ATTENDEE:X-CALENDARSERVER-AUTO</calendardatafilter>
     <calendardatafilter>ATTENDEE:X-CALENDARSERVER-RESET-PARTSTAT</calendardatafilter>
