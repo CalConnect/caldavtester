@@ -32,7 +32,7 @@ class Verifier(object):
 
         # status code could be anything, but typically 403, 409 or 507
         if str(response.status) not in statusCode:
-            return False, "        HTTP Status Code Wrong: %d" % (response.status,)
+            return False, "        HTTP Status Code Wrong: %d expected one of %s" % (response.status, ", ".join(statusCode))
 
         # look for pre-condition data
         if not respdata:

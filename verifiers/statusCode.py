@@ -37,4 +37,4 @@ class Verifier(object):
             if result:
                 return True, ""
 
-        return False, "        HTTP Status Code Wrong: %d" % (response.status,)
+        return False, "        HTTP Status Code Wrong: %d expected one of %s" % (response.status, ", ".join(teststatus))

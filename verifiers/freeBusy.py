@@ -32,7 +32,7 @@ class Verifier(object):
 
         # Must have status 200
         if response.status != 200:
-            return False, "        HTTP Status Code Wrong: %d" % (response.status,)
+            return False, "        HTTP Status Code Wrong: %d expected 200" % (response.status,)
 
         # Get expected FREEBUSY info
         busy = args.get("busy", [])

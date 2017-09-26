@@ -58,7 +58,7 @@ class Verifier(object):
 
         # status code must be 200, 201, 207 or explicitly specified code
         if str(response.status) not in statusCode:
-            return False, "        HTTP Status Code Wrong: %d" % (response.status,)
+            return False, "        HTTP Status Code Wrong: %d expected one of %s" % (response.status, ", ".join(statusCode))
 
         # look for response data
         if not respdata:
