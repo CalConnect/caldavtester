@@ -118,9 +118,10 @@ class manager(object):
         self.message("testSuite", testfile[-1])
         return testfile[-1]["tests"]
 
-    def testResult(self, testsuite, name, details, result, addons=None):
+    def testResult(self, testsuite, test, details, result, addons=None):
         result_details = {
-            "name": name,
+            "name": test.name,
+			"description": test.description,
             "result": result,
             "details": details
         }
@@ -128,7 +129,7 @@ class manager(object):
             result_details.update(addons)
         testsuite.append(result_details)
         self.totals[result] += 1
-        self.message("testResult", testsuite[-1])
+        self.message("testResult", result_details)
 
     def readXML(self, serverfile, testfiles, ssl, all, moresubs={}):
 

@@ -188,13 +188,13 @@ class caldavtest(object):
 
     def run_test(self, testsuite, test, etags, only, label=""):
         if test.ignore or only and not test.only:
-            self.manager.testResult(testsuite, test.name, "      Deliberately ignored", manager.RESULT_IGNORED)
+            self.manager.testResult(testsuite, test, "      Deliberately ignored", manager.RESULT_IGNORED)
             return "i"
         elif len(test.missingFeatures()) != 0:
-            self.manager.testResult(testsuite, test.name, "      Missing features: %s" % (", ".join(sorted(test.missingFeatures())),), manager.RESULT_IGNORED)
+            self.manager.testResult(testsuite, test, "      Missing features: %s" % (", ".join(sorted(test.missingFeatures())),), manager.RESULT_IGNORED)
             return "i"
         elif len(test.excludedFeatures()) != 0:
-            self.manager.testResult(testsuite, test.name, "      Excluded features: %s" % (", ".join(sorted(test.excludedFeatures())),), manager.RESULT_IGNORED)
+            self.manager.testResult(testsuite, test, "      Excluded features: %s" % (", ".join(sorted(test.excludedFeatures())),), manager.RESULT_IGNORED)
             return "i"
         else:
             result = True
@@ -211,7 +211,7 @@ class caldavtest(object):
                         failed = False
                         if getattr(req, "iterate_data", False):
                             if not req.hasNextData():
-                                self.manager.testResult(testsuite, test.name, "      No iteration data - ignored", manager.RESULT_IGNORED)
+                                self.manager.testResult(testsuite, test, "      No iteration data - ignored", manager.RESULT_IGNORED)
                                 return "i"
                             while req.getNextData():
                                 result, resulttxt, _ignore_response, _ignore_respdata = self.dorequest(req, test.details, True, False, reqstats, etags=etags, label="%s | #%s" % (label, req_count + 1,), count=ctr + 1)
@@ -239,7 +239,7 @@ class caldavtest(object):
                     "average": reqstats.totaltime / reqstats.count,
                 }
             self.postgresResult(postgresCount, indent=8)
-            self.manager.testResult(testsuite, test.name, resulttxt, manager.RESULT_OK if result else manager.RESULT_FAILED, addons)
+            self.manager.testResult(testsuite, test, resulttxt, manager.RESULT_OK if result else manager.RESULT_FAILED, addons)
             return ["f", "t"][result]
 
     def dorequests(self, description, list, doverify=True, forceverify=False, label="", count=1):

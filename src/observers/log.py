@@ -85,7 +85,7 @@ class Observer(BaseResultsObserver):
             self.loggedFailures.append(failtxt)
 
     def testResult(self, result):
-        result_name = "    Test: " + result["name"]
+        result_name = "    Test: " + result["name"] + ": " + result["description"]
         self._logResult(result_name, result)
         if result["result"] in (manager.RESULT_FAILED, manager.RESULT_ERROR):
             failtxt = "{result}\n{details}\n\n{file}/{suite}/{test}".format(
