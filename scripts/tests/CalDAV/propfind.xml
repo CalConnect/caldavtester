@@ -24,7 +24,7 @@
 	</require-feature>
 
 	<start/>
-	
+
 	<test-suite name='regular home prop finds'>
 		<test name='1'>
 			<description>PROPFIND of basic properties depth=0</description>
@@ -63,9 +63,9 @@
 			</request>
 		</test>
 		<test name='3'>
-      <require-feature>
-        <feature>disallow-propfind-depth-infinite</feature>
-      </require-feature>
+			<require-feature>
+				<feature>disallow-propfind-depth-infinite</feature>
+			</require-feature>
 			<description>PROPFIND of basic properties depth=infinity</description>
 			<request>
 				<method>PROPFIND</method>
@@ -149,9 +149,9 @@
 			</request>
 		</test>
 		<test name='3'>
-      <require-feature>
-        <feature>disallow-propfind-depth-infinite</feature>
-      </require-feature>
+			<require-feature>
+				<feature>disallow-propfind-depth-infinite</feature>
+			</require-feature>
 			<description>PROPFIND of basic properties depth=infinity</description>
 			<request>
 				<method>PROPFIND</method>
@@ -212,6 +212,7 @@
 					<callback>statusCode</callback>
 					<arg>
 						<name>status</name>
+						<value>403</value>
 						<value>404</value>
 					</arg>
 				</verify>
@@ -234,6 +235,7 @@
 					<callback>statusCode</callback>
 					<arg>
 						<name>status</name>
+						<value>403</value>
 						<value>404</value>
 					</arg>
 				</verify>
@@ -256,14 +258,15 @@
 					<callback>statusCode</callback>
 					<arg>
 						<name>status</name>
+						<value>403</value>
 						<value>404</value>
 					</arg>
 				</verify>
 			</request>
 		</test>
 	</test-suite>
-	
-	
+
+
 	<test-suite name='prop names'>
 		<test name='1'>
 			<description>PROPFIND of property names depth=0</description>
@@ -302,9 +305,9 @@
 			</request>
 		</test>
 		<test name='3'>
-      <require-feature>
-        <feature>disallow-propfind-depth-infinite</feature>
-      </require-feature>
+			<require-feature>
+				<feature>disallow-propfind-depth-infinite</feature>
+			</require-feature>
 			<description>PROPFIND of property names depth=infinity</description>
 			<request>
 				<method>PROPFIND</method>
@@ -327,7 +330,7 @@
 			</request>
 		</test>
 	</test-suite>
-	
+
 	<test-suite name='prop all'>
 		<test name='1'>
 			<description>PROPFIND of all properties depth=0</description>
@@ -366,9 +369,9 @@
 			</request>
 		</test>
 		<test name='3'>
-      <require-feature>
-        <feature>disallow-propfind-depth-infinite</feature>
-      </require-feature>
+			<require-feature>
+				<feature>disallow-propfind-depth-infinite</feature>
+			</require-feature>
 			<description>PROPFIND of all properties depth=infinity</description>
 			<request>
 				<method>PROPFIND</method>
@@ -391,7 +394,7 @@
 			</request>
 		</test>
 	</test-suite>
-	
+
 	<test-suite name='prop errors'>
 		<test name='1'>
 			<description>PROPFIND with invalid elements</description>
@@ -456,11 +459,11 @@
 			</request>
 		</test>
 	</test-suite>
-	
+
 	<test-suite name='Depth:infinity disabled'>
-    <require-feature>
-      <feature>disallow-propfind-depth-infinite</feature>
-    </require-feature>
+		<require-feature>
+			<feature>disallow-propfind-depth-infinite</feature>
+		</require-feature>
 		<test name='1'>
 			<require-feature>
 				<feature>own-root</feature>
@@ -593,5 +596,5 @@
 	</test-suite>
 
 	<end/>
-	
+
 </caldavtest>

@@ -66,7 +66,7 @@
 		<test name='3'>
 			<description>PROPFIND of basic properties depth=infinity</description>
 			<require-feature>
-				<feature>apple-server</feature> <!-- Depth infinity is not forbidden in RFC 4918 (WebDAV), nor in 4791 (CardDAV) -->
+				<feature>disallow-propfind-depth-infinite</feature>
 			</require-feature>
 			<request>
 				<method>PROPFIND</method>
@@ -221,7 +221,7 @@
 		<test name='3'>
 			<description>PROPFIND of property names depth=infinity</description>
 			<require-feature>
-				<feature>apple-server</feature> <!-- Depth infinity is not forbidden in RFC 4918 (WebDAV), nor in 4791 (CardDAV) -->
+				<feature>disallow-propfind-depth-infinite</feature>
 			</require-feature>
 			<request>
 				<method>PROPFIND</method>
@@ -285,7 +285,7 @@
 		<test name='3'>
 			<description>PROPFIND of all properties depth=infinity</description>
 			<require-feature>
-				<feature>apple-server</feature> <!-- Depth infinity is not forbidden in RFC 4918 (WebDAV), nor in 4791 (CardDAV) -->
+				<feature>disallow-propfind-depth-infinite</feature>
 			</require-feature>
 			<request>
 				<method>PROPFIND</method>
