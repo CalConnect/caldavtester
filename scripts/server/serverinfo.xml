@@ -30,7 +30,9 @@
 	<waitsuccess>30</waitsuccess>
 
 	<features>
+		<!-- set of "features" switched off now by default, but can be switched on to test or preserve original Apple CalendarServer behavior -->
 		<!-- <feature>apple-server</server> -->       <!-- feature used to disable diverse Apple specific tests -->
+		<!-- <feature>disallow-propfind-depth-infinite</feature> -->	<!-- Depth infinity is not forbidden in RFC 4918 (WebDAV), nor in 4791 (CardDAV) -->
 
     <!--  Standard CalDAV features that may not be supported -->
     <feature>CalDAV text-match</feature>							<!-- Text match in calendar query -->
@@ -55,7 +57,6 @@
 		<feature>calendarserver-principal-search REPORT</feature>	<!-- ACL calendarserver-principal-search REPORT -->
 
 		<feature>add-member</feature>					<!-- Add-member used to create resources -->
-    <feature>disallow-propfind-depth-infinite</feature>		<!-- Depth infinity disallowed on PROPFIND -->
 		<!-- <feature>auth-on-root</feature> -->		<!-- Whether the server requires authentication on the root URI -->
 		<feature>brief</feature>					    <!-- Brief header for PROPFIND, REPORT -->
 		<feature>bulk-post</feature>					<!-- Bulk POST requests -->
