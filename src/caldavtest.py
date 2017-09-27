@@ -524,12 +524,14 @@ class caldavtest(object):
             for href in hrefs:
                 result, respdata = self.doget(req, (href, collection[1], collection[2],), label)
                 test = "unknown"
-                if respdata.startswith("BEGIN:VCALENDAR"):
+                if respdata is None:
+                    rdata += "\n\nhref: {h}\ntest: {t}\n\n<<NO RESPONSE DATA>>\n".format(h=href, t=test)
+                elif respdata.startswith("BEGIN:VCALENDAR"):
                     uid = respdata.find("UID:")
                     if uid != -1:
                         uid = respdata[uid + 4:uid + respdata[uid:].find("\r\n")]
                         test = self.uidmaps.get(uid, "unknown")
-                rdata += "\n\nhref: {h}\ntest: {t}\n\n{r}\n".format(h=href, t=test, r=respdata)
+                    rdata += "\n\nhref: {h}\ntest: {t}\n\n{r}\n".format(h=href, t=test, r=respdata)
 
             return False, rdata
         else:
