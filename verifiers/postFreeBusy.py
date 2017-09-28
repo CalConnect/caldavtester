@@ -97,12 +97,12 @@ class Verifier(object):
                         raise ValueError("Unknown FBTYPE: %s" % (fbtype,))
 
                 # Set sizes must match
-                if (
-                    (len(busy) != len(busyp)) or
-                    (len(unavailable) != len(unavailablep)) or
-                    (len(tentative) != len(tentativep))
-                ):
-                    raise ValueError("Period list sizes do not match.")
+                if len(busy) != len(busyp):
+                    raise ValueError("Period list sizes do not match for FBTYPE: %s got %d expected %d (maybe not aggregated)." % ("BUSY", len(busyp), len(busy)))
+                if len(tentative) != len(tentativep):
+                    raise ValueError("Period list sizes do not match for FBTYPE: %s got %d expected %d (maybe not aggregated)." % ("TENTATIVE", len(tentativep), len(tentative)))
+                if len(unavailable) != len(unavailablep):
+                    raise ValueError("Period list sizes do not match for FBTYPE: %s got %d expected %d (maybe not aggregated)." % ("UNAVAILABLE", len(unavailablep), len(unavailable)))
 
                 # Convert to string sets
                 busy = set(busy)
@@ -117,11 +117,11 @@ class Verifier(object):
 
                 # Compare all periods
                 if len(busyp.symmetric_difference(busy)):
-                    raise ValueError("Busy periods do not match")
+                    raise ValueError("Busy periods do not match: "+", ".join(busyp.symmetric_difference(busy)));
                 elif len(tentativep.symmetric_difference(tentative)):
-                    raise ValueError("Busy-tentative periods do not match")
+                    raise ValueError("Busy-tentative periods do not match: "+", ".join(tentativep.symmetric_difference(tentative)))
                 elif len(unavailablep.symmetric_difference(unavailable)):
-                    raise ValueError("Busy-unavailable periods do not match")
+                    raise ValueError("Busy-unavailable periods do not match: "+", ".join(unavailablep.symmetric_difference(unavailable)))
 
                 break
 

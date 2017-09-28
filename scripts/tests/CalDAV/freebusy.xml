@@ -37,13 +37,17 @@
 			<ruri>$inboxpath2:/</ruri>
 		</request>
 	</start>
-	
+
 	<test-suite name='Freebusy - mixed timed and all-day'>
 		<test name='1'>
 			<description>PUT timed event</description>
 			<request end-delete='yes'>
 				<method>PUT</method>
 				<ruri>$calendarpath1:/1.ics</ruri>
+				<header>
+					<name>Prefer</name>
+					<value>return=representation</value>
+				</header>
 				<data>
 					<content-type>text/calendar; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/freebusy/1.ics</filepath>
@@ -58,6 +62,10 @@
 			<request end-delete='yes'>
 				<method>PUT</method>
 				<ruri>$calendarpath1:/2.ics</ruri>
+				<header>
+					<name>Prefer</name>
+					<value>return=representation</value>
+				</header>
 				<data>
 					<content-type>text/calendar; charset=utf-8</content-type>
 					<filepath>Resource/CalDAV/freebusy/2.ics</filepath>
@@ -112,7 +120,7 @@
 			</request>
 		</test>
 	</test-suite>
-	
+
 	<end/>
-	
+
 </caldavtest>
