@@ -33,6 +33,7 @@
 		<!-- set of "features" switched off now by default, but can be switched on to test or preserve original Apple CalendarServer behavior -->
 		<!-- <feature>apple-server</server> -->       <!-- feature used to disable diverse Apple specific tests -->
 		<!-- <feature>disallow-propfind-depth-infinite</feature> -->	<!-- Depth infinity is not forbidden in RFC 4918 (WebDAV), nor in 4791 (CardDAV) -->
+		<!-- <feature>propfind-no-dav-header</feature> -->	<!-- check that NO DAV header is returned for PROPFIND, this is no WebDAV or CalDAV requirement -->
 
     <!--  Standard CalDAV features that may not be supported -->
     <feature>CalDAV text-match</feature>							<!-- Text match in calendar query -->
