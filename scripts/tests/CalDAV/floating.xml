@@ -90,7 +90,7 @@
 			<method>MKCALENDAR</method>
 			<ruri>$calendarhome1:/calendar-us/</ruri>
 			<data>
-				<content-type>text/calendar; charset=utf-8</content-type>
+				<content-type>text/xml; charset=utf-8</content-type>
 				<filepath>Resource/CalDAV/floating/put/8.txt</filepath>
 			</data>
 		</request>
