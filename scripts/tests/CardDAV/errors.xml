@@ -214,6 +214,7 @@
 					<arg>
 						<name>status</name>
 						<value>403</value>
+						<value>405</value>
 					</arg>
 				</verify>
 			</request>
