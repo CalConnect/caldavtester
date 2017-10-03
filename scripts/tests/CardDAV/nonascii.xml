@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" standalone="no"?>
+<?xml version="1.0" standalone="no"?>
 
 <!DOCTYPE caldavtest SYSTEM "caldavtest.dtd">
 
@@ -403,7 +403,7 @@
 				<method>REPORT</method>
 				<ruri>$addressbookpath1:/</ruri>
 				<data>
-					<content-type>text/vcard; charset=utf-8</content-type>
+					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CardDAV/vnonascii/7.xml</filepath>
 				</data>
 				<verify>
@@ -421,7 +421,7 @@
 				<method>REPORT</method>
 				<ruri>$addressbookpath1:/</ruri>
 				<data>
-					<content-type>text/vcard; charset=utf-8</content-type>
+					<content-type>text/xml; charset=utf-8</content-type>
 					<filepath>Resource/CardDAV/vnonascii/9.xml</filepath>
 				</data>
 				<verify>
