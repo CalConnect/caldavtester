@@ -40,7 +40,7 @@
 					<callback>header</callback>
 					<arg>
 						<name>header</name>
-						<value>DAV</value>
+						<value>*DAV</value>
 					</arg>
 				</verify>
 			</request>
@@ -57,7 +57,7 @@
 					<callback>header</callback>
 					<arg>
 						<name>header</name>
-						<value>DAV</value>
+						<value>*DAV</value>
 					</arg>
 				</verify>
 			</request>
