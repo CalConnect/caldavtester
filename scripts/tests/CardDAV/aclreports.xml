@@ -30,7 +30,7 @@
 			<method>PROPPATCH</method>
 			<ruri>$addressbookpath1:/</ruri>
 			<data>
-				<content-type>text/vcard; charset=utf-8</content-type>
+				<content-type>text/xml; charset=utf-8</content-type>
 				<filepath>Resource/CardDAV/vaclreports/10.xml</filepath>
 			</data>
 		</request>
