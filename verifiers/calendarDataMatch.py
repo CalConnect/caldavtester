@@ -113,8 +113,13 @@ class Verifier(object):
                     if ":" in filter:
                         propname, parameter = filter.split(":")
                         if property.getName() == propname:
-                            if property.hasParameter(parameter):
-                                property.removeParameters(parameter)
+                            if "=" in parameter:
+                                parameter, value = parameter.split("=")
+                                if property.hasParameter(parameter) and property.getParameterValue(parameter) == value:
+                                    property.removeParameters(parameter)
+                            else:
+                                if property.hasParameter(parameter):
+                                    property.removeParameters(parameter)
                     else:
                         if "=" in filter:
                             filter_name, filter_value = filter.split("=")
