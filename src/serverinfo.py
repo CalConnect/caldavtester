@@ -206,7 +206,8 @@ class serverinfo(object):
 
     def parseFeatures(self, node):
         for child in node.getchildren():
-            if child.tag == src.xmlDefs.ELEMENT_FEATURE:
+            # allow to disable features with attr enable="false"
+            if child.tag == src.xmlDefs.ELEMENT_FEATURE and child.get(src.xmlDefs.ATTR_ENABLE) != "false":
                 self.features.add(child.text.encode("utf-8"))
 
     def updateParams(self):

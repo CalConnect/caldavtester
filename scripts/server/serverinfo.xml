@@ -19,138 +19,140 @@
  -->
 
 <serverinfo>
+    <!-- How to access the server -->
 	<host>localhost</host>
-	<nonsslport>8008</nonsslport>
-	<sslport>8443</sslport>
+	<nonsslport>80</nonsslport>
+	<sslport>443</sslport>
 	<authtype>basic</authtype>
 	<!-- <unix>/tmp/caldavd_requests/unsecured.sock</unix> -->
 
+    <!-- Timeouts used for varios requests -->
 	<waitcount>120</waitcount>
 	<waitdelay>0.25</waitdelay>
 	<waitsuccess>30</waitsuccess>
 
 	<features>
-		<!-- set of "features" switched off now by default, but can be switched on to test or preserve original Apple CalendarServer behavior -->
-		<!-- <feature>apple-server</server> -->       <!-- feature used to disable diverse Apple specific tests -->
-		<!-- <feature>disallow-propfind-depth-infinite</feature> -->	<!-- Depth infinity is not forbidden in RFC 4918 (WebDAV), nor in 4791 (CardDAV) -->
-		<!-- <feature>propfind-no-dav-header</feature> -->	<!-- check that NO DAV header is returned for PROPFIND, this is no WebDAV or CalDAV requirement -->
+		<!-- Set of "features" switched off now by default, but can be switched on to test or preserve original Apple CalendarServer behavior -->
+		<feature enable="false" description="Enables diverse Apple specific tests">apple-server</feature>
+		<feature enable="false" description="Depth infinity is not forbidden in RFC 4918 (WebDAV), nor in 4791 (CardDAV)">disallow-propfind-depth-infinite</feature>
+		<feature enable="false" description="Check that NO DAV header is returned for PROPFIND, this is no WebDAV or CalDAV requirement">propfind-no-dav-header</feature>
 
-    <!--  Standard CalDAV features that may not be supported -->
-    <feature>CalDAV text-match</feature>							<!-- Text match in calendar query -->
-    <feature>this-and-future</feature>                <!-- is supported  -->
-    <feature>shared-properties-mod</feature>          <!-- Modification of shared properties on collection  -->
+        <!--  Standard CalDAV features that may not be supported -->
+		<feature description="Text match in calendar query">CalDAV text-match</feature>
+		<feature description="is supported">this-and-future</feature>
+		<feature description="Modification of shared properties on collection">shared-properties-mod</feature>
 
 		<!--  Generic WebDAV extensions -->
-		<feature>COPY Method</feature>							<!-- COPY method -->
-		<feature>MOVE Method</feature>							<!-- MOVE method -->
-		<feature>Extended MKCOL</feature>						<!-- Extended MKCOL -->
-    <feature>Sync invalid token</feature>				<!-- Sync report can recognize invalid tokens -->
+		<feature description="COPY Method">COPY Method</feature>
+		<feature description="MOVE Method">MOVE Method</feature>
+		<feature description="Extended MKCOL">Extended MKCOL</feature>
+		<feature description="Sync report can recognize invalid tokens">Sync invalid token</feature>
 
-    <!-- VTODO related -->
-    <feature>vtodo-supported</feature>          <!-- Big switch to turn off VTODO tests -->
+		<!-- VTODO related -->
+		<feature description="switch to turn off VTODO tests">vtodo-supported</feature>
 
 		<!-- ACL related -->
-		<feature>ACL Method</feature>							<!-- ACL method -->
-		<feature>acl-principal-prop-set REPORT</feature>		<!-- ACL acl-principal-prop-set REPORT -->
-		<feature>principal-match REPORT</feature>				<!-- ACL principal-match REPORT -->
-		<feature>principal-property-search REPORT</feature>		<!-- ACL principal-property-search REPORT -->
-		<feature>principal-search-property-set REPORT</feature>	<!-- ACL principal-search-property-set REPORT -->
-		<feature>calendarserver-principal-search REPORT</feature>	<!-- ACL calendarserver-principal-search REPORT -->
+		<feature description="ACL method">ACL Method</feature>
+		<feature description="ACL acl-principal-prop-set REPORT">acl-principal-prop-set REPORT</feature>
+		<feature description="ACL principal-match REPORT">principal-match REPORT</feature>
+		<feature description="ACL principal-property-search REPORT">principal-property-search REPORT</feature>
+		<feature description="ACL principal-search-property-set REPORT">principal-search-property-set REPORT</feature>
+		<feature description="ACL calendarserver-principal-search REPORT">calendarserver-principal-search REPORT</feature>
 
-		<feature>add-member</feature>					<!-- Add-member used to create resources -->
-		<!-- <feature>auth-on-root</feature> -->		<!-- Whether the server requires authentication on the root URI -->
-		<feature>brief</feature>					    <!-- Brief header for PROPFIND, REPORT -->
-		<feature>bulk-post</feature>					<!-- Bulk POST requests -->
-		<feature>ctag</feature>							<!-- ctag extension -->
-		<feature>current-user-principal</feature>		<!-- current-user-principal extension -->
-		<feature>directory listing</feature> 			<!-- GET on collection -->
-    <feature>conditional-directory listing</feature> 			Conditional GET on collection
-		<feature>extended-principal-search</feature>	<!-- Extended principal-property-search REPORT extension -->
-		<feature>expand-property</feature>				<!-- Expand property REPORT -->
-		<feature>only-proxy-groups</feature>			<!-- Group-membership only includes delegated-to groups -->
-		<feature>limits</feature>						<!-- max-collections and max-resources limits -->
-		<feature>own-root</feature>						<!-- / is owned by this service -->
-		<feature>prefer</feature>						<!-- Prefer header overall support -->
-		<feature>prefer-minimal</feature>				<!-- Prefer header return=minimal -->
-		<feature>prefer-representation</feature>		<!-- Prefer header return=representation -->
-		<feature>prefer-noroot</feature>				<!-- Prefer header depth-noroot -->
-		<feature>quota</feature>						<!-- WebDAV QUOTA -->
-		<!-- <feature>quota-on-resources</feature> -->	<!-- WebDAV QUOTA on calendar and address book object resources -->
-		<feature>resource-id</feature>					<!-- WebDAV BIND DAV:resource-id property -->
-		<!-- <feature>server-info</feature> -->			<!-- WebDAV server-info document -->
-		<feature>sync-report</feature>					<!-- WebDAV collection sync REPORT -->
-		<!-- <feature>sync-report-limit</feature> -->	<!-- WebDAV collection sync REPORT DAV:limit support -->
-		<feature>sync-report-home</feature>				<!-- WebDAV collection sync REPORT on Homes -->
-		<feature>sync-report-config-token</feature>		<!-- Sync REPORT token includes configuration component -->
-		<feature>well-known</feature>					<!-- well-known feature -->
+		<feature description="Add-member used to create resources">add-member</feature>
+		<feature enable="false" description="Whether the server requires authentication on the root URI">auth-on-root</feature>
+		<feature description="Brief header for PROPFIND, REPORT">brief</feature>
+		<feature description="Bulk POST requests">bulk-post</feature>
+		<feature description="ctag extension">ctag</feature>
+		<feature description="current-user-principal extension">current-user-principal</feature>
+		<feature description="GET on collection">directory listing</feature>
+		<feature description="Conditional GET on collection">conditional-directory listing</feature>
+		<feature description="Extended principal-property-search REPORT extension">extended-principal-search</feature>
+		<feature description="Expand property REPORT">expand-property</feature>
+		<feature description="Group-membership only includes delegated-to groups">only-proxy-groups</feature>
+		<feature description="max-collections and max-resources limits">limits</feature>
+		<feature description="/ is owned by this service">own-root</feature>
+		<feature description="Prefer header overall support">prefer</feature>
+		<feature description="Prefer header return=minimal">prefer-minimal</feature>
+		<feature description="Prefer header return=representation">prefer-representation</feature>
+		<feature description="Prefer header depth-noroot">prefer-noroot</feature>
+		<feature description="WebDAV QUOTA">quota</feature>
+		<feature enable="false" description="WebDAV QUOTA on calendar and address book object resources">quota-on-resources</feature>
+		<feature description="WebDAV BIND DAV:resource-id property">resource-id</feature>
+		<feature enable="false" description="WebDAV server-info document">server-info</feature>
+		<feature description="WebDAV collection sync REPORT">sync-report</feature>
+		<feature enable="false" description="WebDAV collection sync REPORT DAV:limit support">sync-report-limit</feature>
+		<feature description="WebDAV collection sync REPORT on Homes">sync-report-home</feature>
+		<feature description="Sync REPORT token includes configuration component">sync-report-config-token</feature>
+		<feature description="well-known feature">well-known</feature>
 
-		<!-- <feature>per-object-ACLs</feature> -->		<!-- ACL for objects in calendar/address books -->
-		<!-- <feature>regular-collection</feature> -->  <!-- Regular collections allowed in calendar/address book homes -->
+		<feature enable="false" description="ACL for objects in calendar/address books">per-object-ACLs</feature>
+		<feature enable="false" description="Regular collections allowed in calendar/address book homes">regular-collection</feature>
 
-		<feature>json-data</feature>					<!-- jCal and jCard support -->
+		<feature description="jCal and jCard support">json-data</feature>
 
 		<!--  CalendarServer specific extensions -->
-		<feature>control-api</feature>					<!-- Control API support -->
+		<feature description="Control API support">control-api</feature>
 
 		<!-- CalDAV specific extension -->
-		<feature>caldav</feature>					    <!-- Basic CalDAV feature enabler -->
-		<feature>attachments-collection</feature>		<!-- Server uses a collection in same WebDAV tree to store attachments -->
-		<feature>auto-accept</feature>					<!-- Auto-accept for rooms & locations -->
-		<feature>auto-accept-modes</feature>			<!-- Auto-accept modes -->
-		<feature>client-fix-TRANSP</feature>			<!-- fix client TRANSP -->
-		<!-- <feature>dropbox</feature> -->				<!-- dropbox extension -->
-		<feature>default-alarms</feature>				<!-- default alarms extension -->
-		<feature>EMAIL parameter</feature>				<!-- Server normalizes cuaddress and adds EMAIL parameter -->
-		<feature>extended-freebusy</feature>	      	<!-- Extended freebusy response -->
-		<feature>freebusy-url</feature>	      			<!-- Freebusy URL -->
-		<feature>group-attendee-expansion</feature>	    <!-- Auto-expansion of group attendees -->
-		<feature>implicit-scheduling</feature>			<!-- CalDAV scheduling - implicit -->
-		<feature>location-resource-tracking</feature>   <!-- Server tracks who makes unscheduled changes to locations and resources -->
-		<feature>managed-attachments</feature>			<!-- CalDAV Managed Attachments -->
-		<feature>maskuid</feature>						<!-- maskuid extension -->
-		<feature>no-duplicate-uids</feature>			<!-- duplicate UIDs in same home not supported -->
-		<feature>partstat-timestamp</feature>			<!-- Time stamps when PARTSTAT changes extension -->
-		<!-- <feature>podding</feature> -->  			<!-- Podded server -->
-		<feature>private-comments</feature>				<!-- private-comments extension -->
-		<feature>private-events</feature>				<!-- private-events extension -->
-		<feature>proxy</feature>						<!-- calendar-user-proxy extension -->
-		<!-- <feature>proxy-authz</feature> -->			<!-- sudo user extension -->
-		<feature>recurrence-splitting</feature>			<!-- Recurring components can be split -->
-		<feature>remove-duplicate-alarms</feature>   	<!-- Server removes any duplicate alarms on PUT -->
-		<feature>query-extended</feature>				<!-- calendar-query-extended extension -->
-		<feature>shared-calendars</feature>				<!-- Shared calendars extension -->
-		<feature>share-calendars-to-groups</feature>	<!-- Share calendars to groups extension -->
-    <feature>external-sharees-disallowed</feature>  <!-- Don't allow sharees that are not in system -->
-		<feature>schedule-changes</feature>				<!-- schedule-changes property extension -->
-		<feature>split-calendars</feature>				<!-- Calendars are split by component type -->
-		<feature>supported-component-sets</feature>		<!-- CALDAV:supported-calendar-component-sets on calendar homes -->
-		<feature>supported-component-sets-one</feature>	<!-- Only single component calendars allowed to be created -->
-		<feature>timerange-low-limit</feature>			<!-- Time-range only valid one year back -->
-		<feature>timerange-high-limit</feature>			<!-- Time-range only valid 5 years ahead -->
-		<feature>timezones-by-reference</feature>		<!-- Timezones by reference enabled -->
-		<feature>timezone-service</feature>				<!-- Timezone service extension for Wiki -->
-		<feature>timezone-std-service</feature>			<!-- Timezone standard service extension -->
-		<feature>trash-collection</feature>  			<!-- Trash collection enabled -->
-		<feature>travel-time-busy</feature> 			<!-- Travel time appears as busy -->
-		<feature>vavailability</feature>				<!-- VAVAILABILITY on inbox -->
-		<!-- <feature>vpoll</feature> -->				<!-- VPOLL support for store and scheduling -->
-		<feature>webcal</feature>						<!-- Internet calendar subscription via GET on calendar collection -->
+		<feature description="Basic CalDAV feature enabler">caldav</feature>
+		<feature description="Server uses a collection in same WebDAV tree to store attachments">attachments-collection</feature>
+		<feature description="Auto-accept for rooms &amp; locations">auto-accept</feature>
+		<feature description="Auto-accept modes">auto-accept-modes</feature>
+		<feature description="fix client TRANSP">client-fix-TRANSP</feature>
+		<feature enable="false" description="dropbox extension">dropbox</feature>
+		<feature description="default alarms extension">default-alarms</feature>
+		<feature description="Server normalizes cuaddress and adds EMAIL parameter">EMAIL parameter</feature>
+		<feature description="Extended freebusy response">extended-freebusy</feature>
+		<feature description="Freebusy URL">freebusy-url</feature>
+		<feature description="Auto-expansion of group attendees">group-attendee-expansion</feature>
+		<feature description="CalDAV scheduling - implicit">implicit-scheduling</feature>
+		<feature description="Server tracks who makes unscheduled changes to locations and resources">location-resource-tracking</feature>
+		<feature description="CalDAV Managed Attachments">managed-attachments</feature>
+		<feature description="maskuid extension">maskuid</feature>
+		<feature description="duplicate UIDs in same home not supported">no-duplicate-uids</feature>
+		<feature description="Time stamps when PARTSTAT changes extension">partstat-timestamp</feature>
+		<feature enable="false" description="Podded server">podding</feature>
+		<feature description="private-comments extension">private-comments</feature>
+		<feature description="private-events extension">private-events</feature>
+		<feature description="calendar-user-proxy extension">proxy</feature>
+		<feature enable="false" description="sudo user extension">proxy-authz</feature>
+		<feature description="Recurring components can be split">recurrence-splitting</feature>
+		<feature description="Server removes any duplicate alarms on PUT">remove-duplicate-alarms</feature>
+		<feature description="calendar-query-extended extension">query-extended</feature>
+		<feature description="Shared calendars extension">shared-calendars</feature>
+		<feature description="Share calendars to groups extension">share-calendars-to-groups</feature>
+		<feature description="Don't allow sharees that are not in system">external-sharees-disallowed</feature>
+		<feature description="schedule-changes property extension">schedule-changes</feature>
+		<feature description="Calendars are split by component type">split-calendars</feature>
+		<feature description="CALDAV:supported-calendar-component-sets on calendar homes">supported-component-sets</feature>
+		<feature description="Only single component calendars allowed to be created">supported-component-sets-one</feature>
+		<feature description="Time-range only valid one year back">timerange-low-limit</feature>
+		<feature description="Time-range only valid 5 years ahead">timerange-high-limit</feature>
+		<feature description="Timezones by reference enabled">timezones-by-reference</feature>
+		<feature description="Timezone service extension for Wiki">timezone-service</feature>
+		<feature description="Timezone standard service extension">timezone-std-service</feature>
+		<feature description="Trash collection enabled">trash-collection</feature>
+		<feature description="Travel time appears as busy">travel-time-busy</feature>
+		<feature description="VAVAILABILITY on inbox">vavailability</feature>
+		<feature enable="false" description="VPOLL support for store and scheduling">vpoll</feature>
+		<feature description="Internet calendar subscription via GET on calendar collection">webcal</feature>
 
 		<!-- CardDAV specific extension -->
-		<feature>carddav</feature> 						<!-- Basic CardDAV feature enabler -->
-		<feature>default-addressbook</feature> 			<!-- Default address book behavior -->
-		<feature>shared-addressbooks</feature>			<!-- Shared address books extension -->
-		<feature>shared-addressbook-groups</feature>	<!-- Shared address book groups extension -->
-		<feature>directory-gateway</feature>			<!-- Directory gateway extension -->
+		<feature description="Basic CardDAV feature enabler">carddav</feature>
+		<feature description="Default address book behavior">default-addressbook</feature>
+		<feature description="Shared address books extension">shared-addressbooks</feature>
+		<feature description="Shared address book groups extension">shared-addressbook-groups</feature>
+		<feature description="Directory gateway extension">directory-gateway</feature>
 
 	</features>
 
 	<substitutions>
-    <!-- Some old clients used infinite instead of infinity -->
-    <substitution>
-      <key>$infinite-depth-value:</key>
-      <value>infinite</value>
-    </substitution>
+		<!-- Some old clients used infinite instead of infinity -->
+		<substitution>
+			<key>$infinite-depth-value:</key>
+			<value>infinite</value>
+		</substitution>
 		<!-- Useful xpath shortcuts for verifiers -->
 		<substitution>
 			<key>$multistatus-response-prefix:</key>
@@ -461,7 +463,7 @@
 		</substitution>
 
 		<!--  Forty user accounts -->
-		<repeat count="40">
+		<repeat count="3">
 			<!-- user id -->
 			<substitution>
 				<key>$userid%d:</key>
@@ -605,7 +607,7 @@
 		</repeat>
 
 		<!--  Ten public accounts -->
-		<repeat count="10">
+		<repeat count="3">
 			<!-- user id -->
 			<substitution>
 				<key>$publicuserid%d:</key>
@@ -665,7 +667,7 @@
 		</repeat>
 
 		<!--  Twenty resource accounts -->
-		<repeat count="20">
+		<repeat count="2">
 			<substitution>
 				<key>$resourceid%d:</key>
 				<value>resource%02d</value>
@@ -720,7 +722,7 @@
 		</repeat>
 
 		<!--  Ten Location accounts -->
-		<repeat count="10">
+		<repeat count="2">
 			<substitution>
 				<key>$locationid%d:</key>
 				<value>location%02d</value>
@@ -776,7 +778,7 @@
 
 
 		<!--  Ten Group accounts -->
-		<repeat count="40">
+		<repeat count="3">
 			<substitution>
 				<key>$groupid%d:</key>
 				<value>group%02d</value>
@@ -890,7 +892,7 @@
     <calendardatafilter>CLASS=PUBLIC</calendardatafilter>
     <calendardatafilter>PRIORITY=0</calendardatafilter>
     <calendardatafilter>TRANSP=OPAQUE</calendardatafilter>
-    <calendardatafilter>SEQUENCE=0</calendardatafilter>
+	<calendardatafilter>TRIGGER:RELATED=START</calendardatafilter>
 
     <addressdatafilter>PRODID</addressdatafilter>
     <addressdatafilter>REV</addressdatafilter>
