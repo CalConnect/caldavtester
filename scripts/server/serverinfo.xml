@@ -19,14 +19,14 @@
  -->
 
 <serverinfo>
-    <!-- How to access the server -->
+	<!-- How to access the server -->
 	<host>localhost</host>
 	<nonsslport>80</nonsslport>
 	<sslport>443</sslport>
 	<authtype>basic</authtype>
 	<!-- <unix>/tmp/caldavd_requests/unsecured.sock</unix> -->
 
-    <!-- Timeouts used for varios requests -->
+	<!-- Timeouts used for varios requests -->
 	<waitcount>120</waitcount>
 	<waitdelay>0.25</waitdelay>
 	<waitsuccess>30</waitsuccess>
@@ -37,7 +37,7 @@
 		<feature enable="false" description="Depth infinity is not forbidden in RFC 4918 (WebDAV), nor in 4791 (CardDAV)">disallow-propfind-depth-infinite</feature>
 		<feature enable="false" description="Check that NO DAV header is returned for PROPFIND, this is no WebDAV or CalDAV requirement">propfind-no-dav-header</feature>
 
-        <!--  Standard CalDAV features that may not be supported -->
+		<!--  Standard CalDAV features that may not be supported -->
 		<feature description="Text match in calendar query">CalDAV text-match</feature>
 		<feature description="is supported">this-and-future</feature>
 		<feature description="Modification of shared properties on collection">shared-properties-mod</feature>
@@ -508,10 +508,10 @@
 				<key>$principaluri%d:</key>
 				<value>$principals_uids:$userguid%d:/</value>
 			</substitution>
-      <substitution>
-        <key>$sharingorganizeruri%d:</key>
-        <value>$principals_uids:$userguid%d:/</value>
-      </substitution>
+			<substitution>
+				<key>$sharingorganizeruri%d:</key>
+				<value>$principals_uids:$userguid%d:/</value>
+			</substitution>
 			<substitution>
 				<key>$principal%dnoslash:</key>
 				<value>$principals_users:$userid%d:</value>
@@ -880,20 +880,20 @@
 
 	</substitutions>
 
-    <calendardatafilter>ATTENDEE:X-CALENDARSERVER-DTSTAMP</calendardatafilter>
-    <calendardatafilter>ATTENDEE:X-CALENDARSERVER-AUTO</calendardatafilter>
-    <calendardatafilter>ATTENDEE:X-CALENDARSERVER-RESET-PARTSTAT</calendardatafilter>
-    <calendardatafilter>CALSCALE</calendardatafilter>
-    <calendardatafilter>PRODID</calendardatafilter>
-    <calendardatafilter>DTSTAMP</calendardatafilter>
-    <calendardatafilter>CREATED</calendardatafilter>
-    <calendardatafilter>LAST-MODIFIED</calendardatafilter>
-    <calendardatafilter>X-WR-CALNAME</calendardatafilter>
-    <calendardatafilter>CLASS=PUBLIC</calendardatafilter>
-    <calendardatafilter>PRIORITY=0</calendardatafilter>
-    <calendardatafilter>TRANSP=OPAQUE</calendardatafilter>
+	<calendardatafilter>ATTENDEE:X-CALENDARSERVER-DTSTAMP</calendardatafilter>
+	<calendardatafilter>ATTENDEE:X-CALENDARSERVER-AUTO</calendardatafilter>
+	<calendardatafilter>ATTENDEE:X-CALENDARSERVER-RESET-PARTSTAT</calendardatafilter>
+	<calendardatafilter>CALSCALE</calendardatafilter>
+	<calendardatafilter>PRODID</calendardatafilter>
+	<calendardatafilter>DTSTAMP</calendardatafilter>
+	<calendardatafilter>CREATED</calendardatafilter>
+	<calendardatafilter>LAST-MODIFIED</calendardatafilter>
+	<calendardatafilter>X-WR-CALNAME</calendardatafilter>
+	<calendardatafilter>CLASS=PUBLIC</calendardatafilter>
+	<calendardatafilter>PRIORITY=0</calendardatafilter>
+	<calendardatafilter>TRANSP=OPAQUE</calendardatafilter>
 	<calendardatafilter>TRIGGER:RELATED=START</calendardatafilter>
 
-    <addressdatafilter>PRODID</addressdatafilter>
-    <addressdatafilter>REV</addressdatafilter>
+	<addressdatafilter>PRODID</addressdatafilter>
+	<addressdatafilter>REV</addressdatafilter>
 </serverinfo>
