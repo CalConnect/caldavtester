@@ -32,67 +32,6 @@
 	<waitsuccess>30</waitsuccess>
 
 	<features>
-		<!-- Set of "features" switched off now by default, but can be switched on to test or preserve original Apple CalendarServer behavior -->
-		<feature enable="false" description="Enables diverse Apple specific tests">apple-server</feature>
-		<feature enable="false" description="Depth infinity is not forbidden in RFC 4918 (WebDAV), nor in 4791 (CardDAV)">disallow-propfind-depth-infinite</feature>
-		<feature enable="false" description="Check that NO DAV header is returned for PROPFIND, this is no WebDAV or CalDAV requirement">propfind-no-dav-header</feature>
-
-		<!--  Standard CalDAV features that may not be supported -->
-		<feature description="Text match in calendar query">CalDAV text-match</feature>
-		<feature description="is supported">this-and-future</feature>
-		<feature description="Modification of shared properties on collection">shared-properties-mod</feature>
-
-		<!--  Generic WebDAV extensions -->
-		<feature description="COPY Method">COPY Method</feature>
-		<feature description="MOVE Method">MOVE Method</feature>
-		<feature description="Extended MKCOL">Extended MKCOL</feature>
-		<feature description="Sync report can recognize invalid tokens">Sync invalid token</feature>
-
-		<!-- VTODO related -->
-		<feature description="switch to turn off VTODO tests">vtodo-supported</feature>
-
-		<!-- ACL related -->
-		<feature description="ACL method">ACL Method</feature>
-		<feature description="ACL acl-principal-prop-set REPORT">acl-principal-prop-set REPORT</feature>
-		<feature description="ACL principal-match REPORT">principal-match REPORT</feature>
-		<feature description="ACL principal-property-search REPORT">principal-property-search REPORT</feature>
-		<feature description="ACL principal-search-property-set REPORT">principal-search-property-set REPORT</feature>
-		<feature description="ACL calendarserver-principal-search REPORT">calendarserver-principal-search REPORT</feature>
-
-		<feature description="Add-member used to create resources">add-member</feature>
-		<feature enable="false" description="Whether the server requires authentication on the root URI">auth-on-root</feature>
-		<feature description="Brief header for PROPFIND, REPORT">brief</feature>
-		<feature description="Bulk POST requests">bulk-post</feature>
-		<feature description="ctag extension">ctag</feature>
-		<feature description="current-user-principal extension">current-user-principal</feature>
-		<feature description="GET on collection">directory listing</feature>
-		<feature description="Conditional GET on collection">conditional-directory listing</feature>
-		<feature description="Extended principal-property-search REPORT extension">extended-principal-search</feature>
-		<feature description="Expand property REPORT">expand-property</feature>
-		<feature description="Group-membership only includes delegated-to groups">only-proxy-groups</feature>
-		<feature description="max-collections and max-resources limits">limits</feature>
-		<feature description="/ is owned by this service">own-root</feature>
-		<feature description="Prefer header overall support">prefer</feature>
-		<feature description="Prefer header return=minimal">prefer-minimal</feature>
-		<feature description="Prefer header return=representation">prefer-representation</feature>
-		<feature description="Prefer header depth-noroot">prefer-noroot</feature>
-		<feature description="WebDAV QUOTA">quota</feature>
-		<feature enable="false" description="WebDAV QUOTA on calendar and address book object resources">quota-on-resources</feature>
-		<feature description="WebDAV BIND DAV:resource-id property">resource-id</feature>
-		<feature enable="false" description="WebDAV server-info document">server-info</feature>
-		<feature description="WebDAV collection sync REPORT">sync-report</feature>
-		<feature enable="false" description="WebDAV collection sync REPORT DAV:limit support">sync-report-limit</feature>
-		<feature description="WebDAV collection sync REPORT on Homes">sync-report-home</feature>
-		<feature description="Sync REPORT token includes configuration component">sync-report-config-token</feature>
-		<feature description="well-known feature">well-known</feature>
-
-		<feature enable="false" description="ACL for objects in calendar/address books">per-object-ACLs</feature>
-		<feature enable="false" description="Regular collections allowed in calendar/address book homes">regular-collection</feature>
-
-		<feature description="jCal and jCard support">json-data</feature>
-
-		<!--  CalendarServer specific extensions -->
-		<feature description="Control API support">control-api</feature>
 
 		<!-- CalDAV specific extension -->
 		<feature description="Basic CalDAV feature enabler">caldav</feature>
@@ -138,6 +77,51 @@
 		<feature enable="false" description="VPOLL support for store and scheduling">vpoll</feature>
 		<feature description="Internet calendar subscription via GET on calendar collection">webcal</feature>
 
+		<!-- VTODO related -->
+		<feature description="switch to turn off VTODO tests">vtodo-supported</feature>
+
+		<!-- ACL related -->
+		<feature description="ACL method">ACL Method</feature>
+		<feature description="ACL acl-principal-prop-set REPORT">acl-principal-prop-set REPORT</feature>
+		<feature description="ACL principal-match REPORT">principal-match REPORT</feature>
+		<feature description="ACL principal-property-search REPORT">principal-property-search REPORT</feature>
+		<feature description="ACL principal-search-property-set REPORT">principal-search-property-set REPORT</feature>
+		<feature description="ACL calendarserver-principal-search REPORT">calendarserver-principal-search REPORT</feature>
+
+        <!-- Other WebDAV features and HTTP headers -->
+		<feature description="Add-member used to create resources">add-member</feature>
+		<feature enable="false" description="Whether the server requires authentication on the root URI">auth-on-root</feature>
+		<feature description="Brief header for PROPFIND, REPORT">brief</feature>
+		<feature description="Bulk POST requests">bulk-post</feature>
+		<feature description="ctag extension">ctag</feature>
+		<feature description="current-user-principal extension">current-user-principal</feature>
+		<feature description="GET on collection">directory listing</feature>
+		<feature description="Conditional GET on collection">conditional-directory listing</feature>
+		<feature description="Extended principal-property-search REPORT extension">extended-principal-search</feature>
+		<feature description="Expand property REPORT">expand-property</feature>
+		<feature description="Group-membership only includes delegated-to groups">only-proxy-groups</feature>
+		<feature description="max-collections and max-resources limits">limits</feature>
+		<feature description="/ is owned by this service">own-root</feature>
+		<feature description="Prefer header overall support">prefer</feature>
+		<feature description="Prefer header return=minimal">prefer-minimal</feature>
+		<feature description="Prefer header return=representation">prefer-representation</feature>
+		<feature description="Prefer header depth-noroot">prefer-noroot</feature>
+		<feature description="WebDAV QUOTA">quota</feature>
+		<feature enable="false" description="WebDAV QUOTA on calendar and address book object resources">quota-on-resources</feature>
+		<feature description="WebDAV BIND DAV:resource-id property">resource-id</feature>
+		<feature enable="false" description="WebDAV server-info document">server-info</feature>
+		<feature description="WebDAV collection sync REPORT">sync-report</feature>
+		<feature enable="false" description="WebDAV collection sync REPORT DAV:limit support">sync-report-limit</feature>
+		<feature description="WebDAV collection sync REPORT on Homes">sync-report-home</feature>
+		<feature description="Sync REPORT token includes configuration component">sync-report-config-token</feature>
+		<feature description="well-known feature">well-known</feature>
+
+		<feature enable="false" description="ACL for objects in calendar/address books">per-object-ACLs</feature>
+		<feature enable="false" description="Regular collections allowed in calendar/address book homes">regular-collection</feature>
+
+        <!-- iCal/vCard as JSON, not new jsCal/jMap -->
+		<feature description="jCal and jCard support">json-data</feature>
+
 		<!-- CardDAV specific extension -->
 		<feature description="Basic CardDAV feature enabler">carddav</feature>
 		<feature description="Default address book behavior">default-addressbook</feature>
@@ -145,51 +129,27 @@
 		<feature description="Shared address book groups extension">shared-addressbook-groups</feature>
 		<feature description="Directory gateway extension">directory-gateway</feature>
 
+		<!--  Generic WebDAV extensions -->
+		<feature description="COPY Method">COPY Method</feature>
+		<feature description="MOVE Method">MOVE Method</feature>
+		<feature description="Extended MKCOL">Extended MKCOL</feature>
+		<feature description="Sync report can recognize invalid tokens">Sync invalid token</feature>
+
+		<!--  Standard CalDAV features that may not be supported -->
+		<feature description="Text match in calendar query">CalDAV text-match</feature>
+		<feature description="is supported">this-and-future</feature>
+		<feature description="Modification of shared properties on collection">shared-properties-mod</feature>
+
+		<!-- Set of "features" switched off now by default,
+            but can be switched on to test or preserve original Apple CalendarServer behavior -->
+		<feature enable="false" description="Enables diverse Apple specific tests">apple-server</feature>
+		<feature enable="false" description="Depth infinity is not forbidden in RFC 4918 (WebDAV), nor in 4791 (CardDAV)">disallow-propfind-depth-infinite</feature>
+		<feature enable="false" description="Check that NO DAV header is returned for PROPFIND, this is no WebDAV or CalDAV requirement">propfind-no-dav-header</feature>
+		<feature enable="false" description="Control API support">control-api</feature>
+
 	</features>
 
 	<substitutions>
-		<!-- Some old clients used infinite instead of infinity -->
-		<substitution>
-			<key>$infinite-depth-value:</key>
-			<value>infinite</value>
-		</substitution>
-		<!-- Useful xpath shortcuts for verifiers -->
-		<substitution>
-			<key>$multistatus-response-prefix:</key>
-			<value>/{DAV:}multistatus/{DAV:}response</value>
-		</substitution>
-		<substitution>
-			<key>$multistatus-href-prefix:</key>
-			<value>/{DAV:}multistatus/{DAV:}response/{DAV:}href</value>
-		</substitution>
-		<substitution>
-			<key>$verify-response-prefix:</key>
-			<value>{DAV:}response/{DAV:}propstat/{DAV:}prop</value>
-		</substitution>
-		<substitution>
-			<key>$verify-property-prefix:</key>
-			<value>/{DAV:}multistatus/{DAV:}response/{DAV:}propstat/{DAV:}prop</value>
-		</substitution>
-		<substitution>
-			<key>$verify-bad-response:</key>
-			<value>/{DAV:}multistatus/{DAV:}response/{DAV:}status</value>
-		</substitution>
-		<substitution>
-			<key>$verify-error-response:</key>
-			<value>/{DAV:}multistatus/{DAV:}response/{DAV:}error</value>
-		</substitution>
-		<substitution>
-			<key>$CALDAV:</key>
-			<value>urn:ietf:params:xml:ns:caldav</value>
-		</substitution>
-		<substitution>
-			<key>$CARDDAV:</key>
-			<value>urn:ietf:params:xml:ns:carddav</value>
-		</substitution>
-		<substitution>
-			<key>$CS:</key>
-			<value>http://calendarserver.org/ns/</value>
-		</substitution>
 
 		<!-- Server configuration settings -->
 		<!-- $host: and $hostssl: are implicitly added by CalDAVTester based
@@ -878,7 +838,51 @@
 			<value>MAILTO:$email2:</value>
 		</substitution>
 
-	</substitutions>
+		<!-- Some old clients used infinite instead of infinity -->
+		<substitution>
+			<key>$infinite-depth-value:</key>
+			<value>infinite</value>
+		</substitution>
+
+		<!-- Useful xpath shortcuts for verifiers, do NOT modify -->
+		<substitution>
+			<key>$multistatus-response-prefix:</key>
+			<value>/{DAV:}multistatus/{DAV:}response</value>
+		</substitution>
+		<substitution>
+			<key>$multistatus-href-prefix:</key>
+			<value>/{DAV:}multistatus/{DAV:}response/{DAV:}href</value>
+		</substitution>
+		<substitution>
+			<key>$verify-response-prefix:</key>
+			<value>{DAV:}response/{DAV:}propstat/{DAV:}prop</value>
+		</substitution>
+		<substitution>
+			<key>$verify-property-prefix:</key>
+			<value>/{DAV:}multistatus/{DAV:}response/{DAV:}propstat/{DAV:}prop</value>
+		</substitution>
+		<substitution>
+			<key>$verify-bad-response:</key>
+			<value>/{DAV:}multistatus/{DAV:}response/{DAV:}status</value>
+		</substitution>
+		<substitution>
+			<key>$verify-error-response:</key>
+			<value>/{DAV:}multistatus/{DAV:}response/{DAV:}error</value>
+		</substitution>
+		<substitution>
+			<key>$CALDAV:</key>
+			<value>urn:ietf:params:xml:ns:caldav</value>
+		</substitution>
+		<substitution>
+			<key>$CARDDAV:</key>
+			<value>urn:ietf:params:xml:ns:carddav</value>
+		</substitution>
+		<substitution>
+			<key>$CS:</key>
+			<value>http://calendarserver.org/ns/</value>
+		</substitution>
+
+    </substitutions>
 
 	<calendardatafilter>ATTENDEE:X-CALENDARSERVER-DTSTAMP</calendardatafilter>
 	<calendardatafilter>ATTENDEE:X-CALENDARSERVER-AUTO</calendardatafilter>
